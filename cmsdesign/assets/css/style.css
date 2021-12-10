@@ -1357,6 +1357,9 @@ progress#file {
 }
 
 @media (max-width: 420px) {
+  /* .sidebar li .tooltip {
+    display: none;
+  } */
 
 }
 

@@ -1,161 +1,143 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CMS</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- css cdn -->
-    <link rel="stylesheet" href="assets/css/boostrap-light.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Open+Sans&display=swap" rel="stylesheet">
     <!-- font-awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <!-- light slider -->
-
+    <!-- tooltip -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Light slider -->
     <link rel="stylesheet" href="file/css/lightslider.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/boostrap-light.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
     <!-- sidebar start -->
     <div class="sidebar">
-        <!-- <div> -->
-            <div class="logo-details">
-                <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
-                <div class="logo_name">
-                    <img class="logo full-logo" src="assets/images/black_logo.png" alt="Hocalwire">
-                    <img class="logo short-logo" src="assets/images/avatar.jpeg" alt="Hocalwire">
-                </div>
-                <div class="sidebar-bars">
-                    <i class="fas fa-bars" id="btn"></i>
-                </div>
+        <div class="logo-details">
+            <div class="logo_name">
+                <img class="logo full-logo" src="assets/images/black_logo.png" alt="Hocalwire">
+                <img class="logo short-logo" src="assets/images/avatar.jpeg" alt="Hocalwire">
             </div>
-            <div class="sidebar-menu">
-                <ul class="nav-list">
-                    <li data-tippy-content="Dashboard" class="active">
-                        <a href="#">
-                            <i class="fas fa-border-all"></i>
-                            <span class="links_name">Dashboard</span>
-                        </a>
-                        <!-- <span class="tooltip">Dashboard</span> -->
-                    </li>
-                    <li data-tippy-content="Subscribers">
-                        <a href="#">
-                            <i class="fas fa-user-friends"></i>
-                            <span class="links_name">Subscribers</span>
-                        </a>
-                        <!-- <span class="tooltip">Subscribers</span> -->
-                    </li>
-                    <li data-tippy-content="Planning">
-                        <a href="#">
-                            <i class="fas fa-clipboard-list"></i>
-                            <span class="links_name">Planning</span>
-                        </a>
-                        <i class="fas fa-chevron-right h-down-arrow"></i>
-                        <!-- <span class="tooltip">Planning</span> -->
-                    </li>
-                    <li data-tippy-content="Reporters">
-                        <a href="#">
-                            <i class="fas fa-microphone"></i>
-                            <span class="links_name">Reporters</span>
-                        </a>
-                        <!-- <span class="tooltip">Reporters</span> -->
-                    </li>
-                    <li data-tippy-content="News Room">
-                        <a href="#">
-                            <i class="fas fa-receipt"></i>
-                            <span class="links_name">News Room</span>
-                        </a>
-                        <!-- <span class="tooltip">News Room</span> -->
-                    </li>
-                    <li data-tippy-content="Live Room">
-                        <a href="#">
-                            <i class="fas fa-play"></i>
-                            <span class="links_name">Live Room</span>
-                        </a>
-                        <!-- <span class="tooltip">Live Room</span> -->
-                    </li>
-                    <li data-tippy-content="Buzz">
-                        <a href="#">
-                            <i class="fas fa-bolt"></i>
-                            <span class="links_name">Buzz</span>
-                        </a>
-                        <!-- <span class="tooltip">Buzz</span> -->
-                    </li>
-                    <li data-tippy-content="Stories">
-                        <a href="#">
-                            <i class="fas fa-book-open"></i>
-                            <span class="links_name">Stories</span>
-                        </a>
-                        <!-- <span class="tooltip">Stories</span> -->
-                    </li>
-                    <li data-tippy-content="News">
-                        <a href="#">
-                            <i class="fas fa-file-alt"></i>
-                            <span class="links_name">News</span>
-                        </a>
-                        <!-- <span class="tooltip">News</span> -->
-                    </li>
-                    <li data-tippy-content="AMP Stories">
-                        <a href="#">
-                            <i class="fas fa-bolt"></i>
-                            <span class="links_name">AMP Stories</span>
-                        </a>
-                        <!-- <span class="tooltip">AMP Stories</span> -->
-                    </li>
-                    <li data-tippy-content="News Bulletin">
-                        <a href="#">
-                            <i class="fas fa-globe"></i>
-                            <span class="links_name">News Bulletin</span>
-                        </a>
-                        <!-- <span class="tooltip">News Bulletin</span> -->
-                    </li>
-                    <li data-tippy-content="Videofy">
-                        <a href="#">
-                            <i class="fas fa-video"></i>
-                            <span class="links_name">Videofy</span>
-                        </a>
-                        <!-- <span class="tooltip">Videofy</span> -->
-                    </li>
-                    <li data-tippy-content="Social">
-                        <a href="#">
-                            <i class="fab fa-telegram-plane"></i>
-                            <span class="links_name">Social</span>
-                        </a>
-                        <!-- <span class="tooltip">Social</span> -->
-                    </li>
-                    <li data-tippy-content="Subscriptions">
-                        <a href="#">
-                            <i class="far fa-envelope"></i>
-                            <span class="links_name">Subscriptions</span>
-                        </a>
-                        <!-- <span class="tooltip">Subscriptions</span> -->
-                    </li>
-                    <li data-tippy-content="Content Management">
-                        <a href="#">
-                            <i class="fas fa-indent"></i>
-                            <span class="links_name">Content Management</span>
-                        </a>
-                        <!-- <span class="tooltip">Content Management</span> -->
-                    </li>
-                    <li data-tippy-content="System Management">
-                        <a href="#">
-                            <i class="fas fa-indent"></i>
-                            <span class="links_name">System Management</span>
-                        </a>
-                        <!-- <span class="tooltip">System Management</span> -->
-                    </li>
-                </ul>
+            <div class="sidebar-bars">
+                <i class="fas fa-bars" id="btn"></i>
             </div>
-            <div class="sidebar-powered-by">
-                <div class="profile-details">
-                    <span>Powered By:</span>
-                    <img class="poweredby-img" src="assets/images/black_logo.png">
-                </div>
+        </div>
+        <div class="sidebar-menu">
+            <ul class="nav-list">
+                <li data-tippy-content="Dashboard" class="active">
+                    <a href="#">
+                        <i class="fas fa-border-all"></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Subscribers">
+                    <a href="#">
+                        <i class="fas fa-user-friends"></i>
+                        <span class="links_name">Subscribers</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Planning">
+                    <a href="#">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span class="links_name">Planning</span>
+                    </a>
+                    <i class="fas fa-chevron-right h-down-arrow"></i>
+                </li>
+                <li data-tippy-content="Reporters">
+                    <a href="#">
+                        <i class="fas fa-microphone"></i>
+                        <span class="links_name">Reporters</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News Room">
+                    <a href="#">
+                        <i class="fas fa-receipt"></i>
+                        <span class="links_name">News Room</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Live Room">
+                    <a href="#">
+                        <i class="fas fa-play"></i>
+                        <span class="links_name">Live Room</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Buzz">
+                    <a href="#">
+                        <i class="fas fa-bolt"></i>
+                        <span class="links_name">Buzz</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Stories">
+                    <a href="#">
+                        <i class="fas fa-book-open"></i>
+                        <span class="links_name">Stories</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News">
+                    <a href="#">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="links_name">News</span>
+                    </a>
+                </li>
+                <li data-tippy-content="AMP Stories">
+                    <a href="#">
+                        <i class="fas fa-bolt"></i>
+                        <span class="links_name">AMP Stories</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News Bulletin">
+                    <a href="#">
+                        <i class="fas fa-globe"></i>
+                        <span class="links_name">News Bulletin</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Videofy">
+                    <a href="#">
+                        <i class="fas fa-video"></i>
+                        <span class="links_name">Videofy</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Social">
+                    <a href="#">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span class="links_name">Social</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Subscriptions">
+                    <a href="#">
+                        <i class="far fa-envelope"></i>
+                        <span class="links_name">Subscriptions</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Content Management">
+                    <a href="#">
+                        <i class="fas fa-indent"></i>
+                        <span class="links_name">Content Management</span>
+                    </a>
+                </li>
+                <li data-tippy-content="System Management">
+                    <a href="#">
+                        <i class="fas fa-indent"></i>
+                        <span class="links_name">System Management</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-powered-by">
+            <div class="profile-details">
+                <span>Powered By:</span>
+                <img class="poweredby-img" src="assets/images/black_logo.png">
             </div>
-        <!-- </div> -->
+        </div>
     </div>
     <!-- sidebar end -->
     <!-- main content start -->
@@ -353,34 +335,36 @@
     </section>
     <!-- main content end -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="file/js/lightslider.js"></script>
+    <script src="assets/js/main.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $("#lightSlider").lightSlider({
-                item: 5,
-                pauseOnHover: true,
-                controls: true,
-                autoWidth: false,
-                slideMove: 1,
-                slideMargin: 15,
-                pause: 5000,
-                responsive: [{
-                        breakpoint: 992,
-                        settings: {
-                            item: 3
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            item: 1
-                        }
-                    }
-                ]
-            });
+        // $(document).ready(function () {
+        //     $("#lightSlider").lightSlider({
+        //         item: 5,
+        //         pauseOnHover: true,
+        //         controls: true,
+        //         autoWidth: false,
+        //         slideMove: 1,
+        //         slideMargin: 15,
+        //         pause: 5000,
+        //         responsive: [{
+        //                 breakpoint: 992,
+        //                 settings: {
+        //                     item: 3
+        //                 }
+        //             },
+        //             {
+        //                 breakpoint: 768,
+        //                 settings: {
+        //                     item: 1
+        //                 }
+        //             }
+        //         ]
+        //     });
             
-        });
+        // });
     </script>
 </body>
 

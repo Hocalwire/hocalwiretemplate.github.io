@@ -27,6 +27,30 @@ $(document).ready(function(){
     interactive: true,
     theme: 'light',
   });
+
+  // light slider start
+  $("#lightSlider").lightSlider({
+    item: 5,
+    pauseOnHover: true,
+    controls: true,
+    autoWidth: false,
+    slideMove: 1,
+    slideMargin: 15,
+    pause: 5000,
+    responsive: [{
+            breakpoint: 992,
+            settings: {
+                item: 3
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                item: 1
+            }
+        }
+    ]
+  });
 });
 
 // sidebar start
