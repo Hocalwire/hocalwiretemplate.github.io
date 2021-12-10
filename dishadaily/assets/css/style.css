@@ -19,6 +19,14 @@ img{
 .border-bottom{
     border-bottom: 1px solid #dadbdd;
 }
+.py-2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.p-1{
+    padding: 10px;
+    
+}
 .wrapper{
     padding: 5px 20px;
 }
@@ -116,6 +124,12 @@ margin-left: 8px;
     font-size: 18px;
     line-height: 1.5;
 }
+.right-card-section .card-img{
+    width: 30%;
+}
+.right-card-section .card-body{
+    width: 70%;
+}
 .right-top-heading{
     border-bottom: 3px solid #1846AC;
     /* margin-top: 20px; */
@@ -129,7 +143,7 @@ margin-left: 8px;
 }
 .right-section{
     padding: 10px;
-    background-color: #F4F5F6;
+    /* background-color: #F4F5F6; */
 }
 /* article page start */
 .article-heading{
@@ -163,7 +177,7 @@ margin-left: 8px;
     margin-right: 5px;
     margin-bottom: 10px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .card_taglist h5:hover{
     background-color: #000;
@@ -175,10 +189,12 @@ margin-left: 8px;
 
 .card_taglist h5 a:hover{
     color: #fff;
+    
 }
 .card_taglist h5.active{
     color: #fff;
     background-color: #000;
+    font-weight: 600;
 }
 .card_taglist h5.active a{
     color: #fff;
@@ -218,9 +234,9 @@ margin-left: 8px;
 /* .card-text-h3{
 
 } */
-.article-page-right .card .card-img{
+/* .article-page-right .card .card-img{
     width: 200px;
-}
+} */
 .article-page-right .card-body p{
     font-size: 16px;
 }
@@ -260,6 +276,9 @@ margin-left: 8px;
 
 .bg-grey{
     background-color: #67656A;
+}
+.bg-silver{
+    background-color: #F4F5F6;
 }
 .grid-card.main_homepage .card{
     padding: 20px 20px 5px 20px;
@@ -449,15 +468,14 @@ margin-left: 8px;
     width: 350px;
 }
 .article-page-right .h-ad{
-    background-color: #F4F5F6;
+    /* background-color: #F4F5F6; */
 }
 .article-page-right .h-ad img{
     height: 250px;
     width: 350px;
     padding: 10px;
 }
-.h-articles,
-.card_taglist{
+.h-articles{
     display: none;
 }
 @media(max-width:1200px){
@@ -493,5 +511,13 @@ margin-left: 8px;
     }
     .top-heading-first .col-md-4 .d-flex{
         margin-bottom: 20px;
+    }
+    .h-ad img{
+        width: 100%;
+        height: auto;
+    }
+    .article-page-right .h-ad img{
+        width: 100%;
+        height: auto;
     }
 }
