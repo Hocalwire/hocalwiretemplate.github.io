@@ -1,3 +1,21 @@
+
+$(document).ready(function(){
+
+  $('.sidebar-menu ul li').on("click",function(){
+    $('.h-down-arrow').css('transform','rotate(90deg)');
+  });
+
+  // tooltip start
+  tippy('[data-tippy-content]',{
+    animation: 'fade',
+    placement: 'right',
+    arrow: true,
+    animation: 'fade',
+    interactive: true,
+    theme: 'light',
+  });
+});
+
 // sidebar start
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
@@ -8,17 +26,9 @@ closeBtn.addEventListener("click", ()=>{
   menuBtnChange();
 });
 
-searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+searchBtn.addEventListener("click", ()=>{
   sidebar.classList.toggle("open");
   menuBtnChange(); 
 });
 
-// following are the code to change sidebar button
-function menuBtnChange() {
- if(sidebar.classList.contains("open")){
-   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
- }else {
-   closeBtn.classList.replace("bx-menu-alt-right","bx-menu"); //replacing the iocns class
- }
-}
 // sidebar end
