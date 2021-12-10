@@ -1,5 +1,18 @@
-
 $(document).ready(function(){
+
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww > 991) {
+    $('.sidebar').removeClass('.close');
+    } else if (ww >= 0) {
+    $('.sidebar').addClass('open');
+    };
+  };
+  $(window).resize(function(){
+      alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
 
   $('.sidebar-menu ul li').on("click",function(){
     $('.h-down-arrow').css('transform','rotate(90deg)');
