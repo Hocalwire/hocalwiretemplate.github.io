@@ -24,7 +24,6 @@ $(document).ready(function(){
     placement: 'right',
     arrow: true,
     animation: 'fade',
-    interactive: true,
     theme: 'light',
   });
 

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CMS</title>
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- tooltip -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Light slider -->
+    <link rel="stylesheet" href="file/css/lightslider.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/boostrap-light.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- sidebar start -->
+    <div class="sidebar">
+        <!-- <div> -->
+        <div class="logo-details">
+            <div class="logo_name">
+                <img class="logo full-logo" src="assets/images/black_logo.png" alt="Hocalwire">
+                <img class="logo short-logo" src="assets/images/avatar.jpeg" alt="Hocalwire">
+            </div>
+            <div class="sidebar-bars">
+                <i class="fas fa-bars" id="btn"></i>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <ul class="nav-list">
+                <li data-tippy-content="Dashboard" class="active">
+                    <a href="#">
+                        <i class="fas fa-border-all"></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Subscribers">
+                    <a href="#">
+                        <i class="fas fa-user-friends"></i>
+                        <span class="links_name">Subscribers</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Planning">
+                    <a href="#">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span class="links_name">Planning</span>
+                    </a>
+                    <i class="fas fa-chevron-right h-down-arrow"></i>
+                </li>
+                <li data-tippy-content="Reporters">
+                    <a href="#">
+                        <i class="fas fa-microphone"></i>
+                        <span class="links_name">Reporters</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News Room">
+                    <a href="#">
+                        <i class="fas fa-receipt"></i>
+                        <span class="links_name">News Room</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Live Room">
+                    <a href="#">
+                        <i class="fas fa-play"></i>
+                        <span class="links_name">Live Room</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Buzz">
+                    <a href="#">
+                        <i class="fas fa-bolt"></i>
+                        <span class="links_name">Buzz</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Stories">
+                    <a href="#">
+                        <i class="fas fa-book-open"></i>
+                        <span class="links_name">Stories</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News">
+                    <a href="#">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="links_name">News</span>
+                    </a>
+                </li>
+                <li data-tippy-content="AMP Stories">
+                    <a href="#">
+                        <i class="fas fa-bolt"></i>
+                        <span class="links_name">AMP Stories</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News Bulletin">
+                    <a href="#">
+                        <i class="fas fa-globe"></i>
+                        <span class="links_name">News Bulletin</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Videofy">
+                    <a href="#">
+                        <i class="fas fa-video"></i>
+                        <span class="links_name">Videofy</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Social">
+                    <a href="#">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span class="links_name">Social</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Subscriptions">
+                    <a href="#">
+                        <i class="far fa-envelope"></i>
+                        <span class="links_name">Subscriptions</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Content Management">
+                    <a href="#">
+                        <i class="fas fa-indent"></i>
+                        <span class="links_name">Content Management</span>
+                    </a>
+                </li>
+                <li data-tippy-content="System Management">
+                    <a href="#">
+                        <i class="fas fa-indent"></i>
+                        <span class="links_name">System Management</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-powered-by">
+            <div class="profile-details">
+                <span>Powered By:</span>
+                <img class="poweredby-img" src="assets/images/black_logo.png">
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- sidebar end -->
+    <!-- main content start -->
+    <section class="home-section">
+        <div class="main-content">
+            <div class="d-flex flex-wrap top-header">
+                <div class="top-header-left">
+                    <form class="top-header-search">
+                        <button class="top-header-btn" type="submit"><i class="fas fa-search"></i></button>
+                        <input class="top-header-srch" type="text" placeholder="Search.." name="search2">
+                    </form>
+                </div>
+                <div class="top-header-right">
+                    <div class="right-profile flex-wrap">
+                        <div class="accent">
+                            <span class="color-light"></span>
+                            <span class="accent-name">Accent</span>
+                        </div>
+                        <div class="h-notification">
+                            <span class="fa-stack has-badge" data-count="1">
+                                <i class="fas fa-bell" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="profile">
+                            <div class="h-avatar">
+                                <img src="assets/images/avatar.jpeg" alt="avatar">
+                            </div>
+                            <div class="h-profile">
+                                <div class="profile-name">Hello
+                                    <span>Akhil!</span>
+                                </div>
+                                <div class="profile-email">
+                                    akhil@hocalwire.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 col-xs-12">
+                        <div class="dashboard-section">
+                            <h4 class="Header-name"><i class="fas fa-arrow-left"></i> Create New Story</h4>
+                            <p class="header-content">All the latest updates an stats can be monitored here!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-xs-12">
+                        <div class="d-flex flex-end create-story-btn">
+                            <div class="">
+                                <button type="button" class="btn btn-white"><i class="fas fa-plus"></i> Publish
+                                    Now</button>
+                                <button type="button" class="btn"><i class="fab fa-telegram-plane"></i> Submit for
+                                    Review</button>
+                            </div>
+                            <div class="">
+                                <button type="button" class="btn only-icon-btn"><i class="fas fa-eye"></i></button>
+                                <button type="button" class="btn only-icon-btn"><i class="far fa-save"></i></button>
+                                <button type="button" class="btn only-icon-btn"><i
+                                        class="far fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="after-dashboard create-story-2">
+                <div class="create-story-section-one">
+                    <div class="d-flex main-progress-bar">
+                        <div class="d-flex story-progress-bar">
+                            <div class="progress-number">1</div>
+                            <span class="progress-content">Basic Details</span>
+                        </div>
+                        <div>
+                            <span>............</span>
+                        </div>
+                        <div class="d-flex story-progress-bar">
+                            <div class="progress-number">2</div>
+                            <span class="progress-content">Images & Media</span>
+                        </div>
+                        <div>
+                            <span>............</span>
+                        </div>
+                        <div class="d-flex story-progress-bar">
+                            <div class="progress-number">3</div>
+                            <span class="progress-content">News Editor</span>
+                        </div>
+                        <div>
+                            <span>............</span>
+                        </div>
+                        <div class="d-flex story-progress-bar">
+                            <div class="progress-number">4</div>
+                            <span class="progress-content">Social Share</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="create-story-section-one ">
+                    <h6 class="form-heading">Configure Social Posting</h6>
+                    <div class="d-flex configure-story-btn">
+                        <div class="group-btn">
+                            <button type="button" class="btn btn-white"><i class="fas fa-plus"></i>Facebook</button>
+                            <button type="button" class="btn btn-white"><i class="fas fa-plus"></i> Twitter</button>
+                        </div>
+                        <div class="">
+                            <button type="button" class="btn btn-white"><i class="far fa-copy"></i>Copy to
+                                Twitter</button>
+                            <button type="button" class="btn btn-white"><i class="fas fa-times"></i> Clear all
+                                Fields</button>
+                            <button type="button" class="btn btn-white"><i class="fas fa-sync-alt"></i>Reset from
+                                Story</button>
+                            <button type="button" class="btn btn-white"><i class="fas fa-indent"></i> View Social Media
+                                Pages</button>
+                        </div>
+                    </div>
+                    <div class="configure-story">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                <div class="configure-left-section">
+                                    <div class="configure-desc-one h-flex">
+                                        <div class="form-group">
+                                            <h6 class="textarea-heading">Add your Caption</h6>
+                                            <div class="h-textarea">
+                                                <textarea rows="3"
+                                                    class="form-control">Facebook users while sharing this video claimed that an innocent Hindu YogeshJatav was pinned to death by a Muslim man named Rashid and his associates. TheLogical Indian Fact Check team verifies this claim.News Heading</textarea>
+                                                <div class="configure-desc-one-icon">
+                                                    <span class="configure-copy"><i class="far fa-copy"></i></span>
+                                                    <span class="configure-times"><i class="fas fa-times"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="textCard">
+                                        <div class="textCard-img">
+                                            <img src="assets/images/articleimage.jpeg" alt="image" class="textCard-top-img">
+                                        </div>
+                                        <div class="textCard-Content">
+                                            <div class="textCard-content-icon"><i class="fas fa-crop-alt"></i></div>
+                                            <div class="textCard-content-icon"><i class="far fa-edit"></i></div>
+                                            <div class="textCard-content-icon"><i class="far fa-trash-alt"></i></div>
+                                            <div class="textCard-content-icon"><i class="fas fa-ellipsis-v"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <button type="button" class="btn btn-white border"><i class="fas fa-paperclip"></i>
+                                            Upload Image</button>
+                                        <button type="button" class="btn btn-white border"><i class="fab fa-youtube"></i>
+                                            Add Youtube</button>
+                                    </div>
+                                    <div class="configure-desc-one h-flex">
+                                        <div class="form-group">
+                                            <h6 class="textarea-heading">Headline / Title</h6>
+                                            <div class="h-textarea">
+                                                <textarea rows="2"
+                                                    class="form-control">Video Of A Youth Attacked With Iron Rod In Jodhpur Shared With False Communal Spin</textarea>
+                                                <div class="configure-desc-one-icon">
+                                                    <span class="configure-copy"><i class="far fa-copy"></i></span>
+                                                    <span class="configure-times"><i class="fas fa-times"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="configure-desc-one h-flex">
+                                        <div class="form-group">
+                                            <h6 class="textarea-heading">Title Description</h6>
+                                            <div class="h-textarea">
+                                                <textarea rows="3"
+                                                    class="form-control">Facebook users while sharing this video claimed that an innocent Hindu Yogesh Jatav was pinned to death by a Muslim man named Rashid and his associates. The Logical Indian Fact Check team verifies this claim.News Heading</textarea>
+                                                <div class="configure-desc-one-icon">
+                                                    <span class="configure-copy"><i class="far fa-copy"></i></span>
+                                                    <span class="configure-times"><i class="fas fa-times"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="configure-desc-one h-flex">
+                                        <div class="form-group">
+                                            <h6 class="textarea-heading">Tags</h6>
+                                            <div class="h-textarea">
+                                                <textarea rows="1"
+                                                    class="form-control">#factcheck, #rajasthan, #jodpur</textarea>
+                                                <div class="configure-desc-one-icon">
+                                                    <span class="configure-copy"><i class="far fa-copy"></i></span>
+                                                    <span class="configure-times"><i class="fas fa-times"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="create-story-section-one shadow-0">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Launch Date </label><br>
+                                                    <i class="far fa-calendar form-left-icon"></i>
+                                                    <input type="text" class="form-control pl-2" list="author-list"
+                                                        placeholder="15/09/2021">
+                                                    <datalist id="author-list">
+                                                        <option value="Author">
+                                                        </option>
+                                                        <option value="Author 1">
+                                                        </option>
+                                                        <option value="Author 2">
+                                                        </option>
+                                                        <option value="Author 3">
+                                                        </option>
+                                                        <option value="Author 4">
+                                                        </option>
+                                                    </datalist>
+                                                    <i class="fas fa-times form-right-icon"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Launch Time</label><br>
+                                                    <i class="far fa-clock form-left-icon"></i>
+                                                    <input type="text" class="form-control pl-2" list="reviewer-list"
+                                                        placeholder="22:45">
+    
+                                                    <i class="fas fa-times form-right-icon"></i>
+                                                    <datalist id="reviewer-list">
+                                                        <option value="reviewer 1">
+                                                        </option>
+                                                        <option value="reviewer 2">
+                                                        </option>
+                                                        <option value="reviewer 3">
+                                                        </option>
+                                                        <option value="reviewer 4">
+                                                        </option>
+                                                        <option value="reviewer 5">
+                                                        </option>
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                <div class="configure-right-section">
+                                    <div class="configure-right-top-inner">
+                                        <div class="flex-card h-flex">
+                                            <div class="flexCard-top">
+                                                <img src="assets/images/avatar.jpeg" class="flexCard-top-img">
+                                            </div>
+                                            <div class="flexCard-content">
+                                                <h5 class="text-dark-blue">The Logical Indian</h5>
+                                                <h6>Today</h6>
+                                            </div>
+                                        </div>
+                                        <div class="configure-right-description">
+                                            <p>Facebook users while sharing this video claimed that an innocent Hindu Yogesh Jatav was pinned to death by a Muslim man named Rashid and his associates. The Logical Indian Fact Check team verifies this claim.</p>
+                                            <h5 class="configure-hashtags text-blue"> #factcheck #rajasthan #jodpur</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-website-url">TheLogicalindian.com</h6>
+                                            <h5>Video Of A Youth Attacked With Iron Rod In Jodhpur Shared With False Communal Spin</h5>
+                                        </div>
+                                        <div class="d-flex h-share">
+                                            <div><button type="button" class="btn"><i class="far fa-thumbs-up"></i> Like</button></div>
+                                            <div><button type="button" class="btn"><i class="far fa-comment-alt"></i> Comment</button></div>
+                                            <div><button type="button" class="btn"><i class="fas fa-share"></i> share</button></div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-right">
+                <button type="button" class="btn btn-primary"><i class="fas fa-save"></i> Save and Continue</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- main content end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="file/js/lightslider.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lightSlider").lightSlider({
+                item: 5,
+                pauseOnHover: true,
+                controls: true,
+                autoWidth: false,
+                slideMove: 1,
+                slideMargin: 15,
+                pause: 5000,
+                responsive: [{
+                        breakpoint: 992,
+                        settings: {
+                            item: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            item: 1
+                        }
+                    }
+                ]
+            });
+
+        });
+    </script>
+</body>
+
+</html>

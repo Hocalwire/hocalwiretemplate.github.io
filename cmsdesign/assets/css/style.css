@@ -1,5 +1,6 @@
 :root {
   --primary-color: #3076df;
+  --dark-primary-color: #3076DF;
   --orange-color: #FF7C32;
   --white-color: #fff;
   --red-color: #FF4235;
@@ -46,7 +47,9 @@ img {
 .text-blue {
   color: var(--primary-color);
 }
-
+.text-dark-blue{
+  color: var(--dark-primary-color);
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -58,7 +61,9 @@ img {
 .mb-2 {
   margin-bottom: 20px;
 }
-
+.mt-2{
+  margin-top: 20px !important;
+}
 .mx-2 {
   margin-left: 20px;
   margin-right: 20px;
@@ -111,7 +116,12 @@ img {
 .border {
   border: 1px solid #E7E7E7;
 }
-
+.border-0{
+  border: none !important;
+}
+.shadow-0{
+box-shadow: none !important;
+}
 .btn-primary {
   background: var(--primary-color);
   color: #FFF;
@@ -127,9 +137,20 @@ img {
   color: #3076DF;
 }
 
-.btn-section .btn.btn-white {
+.btn-section .btn.btn-white{
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.group-btn > .btn:not(:first-child) {
+  margin: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+ 
+}
+.group-btn > .btn:not(:last-child){
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
 }
 
 .d-flex {
@@ -1230,6 +1251,135 @@ progress#file {
 }
 
 /* create story 3 end */
+/* create story 4 start */
+.configure-story-btn .btn.btn-white{
+  border: 1px solid #E7E7E7;
+}
+.configure-story-btn .group-btn .btn{
+  width: 112px;
+}
+.configure-desc-one{
+  position: relative;
+  padding: 12px 0;
+  background: #FFFFFF;
+  border-radius: 8px;
+  /* border: 1px solid rgba(55, 52, 48, 0.1); */
+}
+.configure-desc-one .form-group{
+  width: 100%;
+}
+.configure-desc-one .form-control{
+  position: relative;
+}
+.configure-desc-one .form-control{
+  height: auto;
+  width: 100%;
+  padding: 10px 60px 10px 10px;
+}
+.h-textarea{
+  position: relative;
+}
+.configure-desc-one-icon .configure-copy{
+  position: absolute;
+  top: 8px;
+  right: 40px;
+}
+.configure-times{
+  position: absolute;
+  right: 15px;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.textarea-heading{
+  font-weight: 600;
+}
+/* .configure-desc-one h6{
+  line-height: 18px;
+  margin: 0;
+  width: 95%;
+  font-weight: 600;
+} */
+.configure-desc-one-icon{
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textCard{
+  position: relative;
+}
+.textCard-Content{
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.textCard-Content .textCard-content-icon{
+  width: 22px;
+  height: 22px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 0px 4px;
+  padding: 0;
+  text-align: center;
+  line-height: 1.8;
+}
+.configure-story .create-story-section-one.shadow-0{
+  padding: 0;
+}
+.configure-story .form-control{
+  color: #000;
+  font-weight: 600;
+}
+.configure-story input::-webkit-input-placeholder{
+  color: #000;
+  font-weight: 600;
+}
+.configure-story input:-ms-input-placeholder{
+  color: #000;
+  font-weight: 600;
+}
+.configure-story input::placeholder {
+  color: #000;
+  font-weight: 600;
+}
+.configure-right-section{
+  border: 1px solid #D8DADE;
+}
+.configure-right-top-inner{
+  padding: 20px;
+}
+.configure-right-section .flexCard-top{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.configure-right-section .flexCard-top img{
+  border-radius: 50%;
+}
+.flexCard-content{
+  margin-left: 10px;
+}
+.flexCard-content h5{
+  margin: 0;
+  font-weight: 600;
+}
+.flexCard-content h6{
+  margin: 5px 0 0 0;
+}
+.configure-right-description{
+  margin-top: 16px;
+  color: #565C65;
+  line-height: 1.5;
+}
+.h-share{
+  justify-content: space-around;
+}
+.h-share .btn{
+  color: #000;
+}
+/* create story 4 end */
+
 @media(max-width:1200px) {
   .create-story-btn {
     margin-bottom: 10px;
