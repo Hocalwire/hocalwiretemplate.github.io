@@ -181,7 +181,7 @@
             </div>
             <div class="header">
                 <div class="dashboard-section">
-                    <h4 class="Header-name">Stories</h4>
+                    <h4 class="Header-name">News Room</h4>
                     <p class="header-content">All the latest updates an stats can be monitored here!</p>
                 </div>
             </div>
@@ -204,8 +204,8 @@
                                     <input class="h-search" type="text" placeholder="Search" >
                                 </div>
                                 <div class="filter-search allnews mr-1">
-                                    <i class="fas fa-sort-amount-down-alt"></i>
-                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="All News" />
+                                    <i class="fas fa-user-alt"></i>
+                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="All Teams" />
                                     <i class="fas fa-chevron-down"></i>
                                     <datalist id="All_news">
                                         <option value="Chrome">
@@ -216,24 +216,37 @@
                                         <option value="Microsoft Edge">
                                     </datalist>
                                 </div>
-                                <div class="h-line">|</div>
+                                <div class="filter-search allnews mr-1">
+                                    <i class="fas fa-microphone-alt"></i>
+                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="All Reporters" />
+                                    <i class="fas fa-chevron-down"></i>
+                                    <datalist id="All_news">
+                                        <option value="Chrome">
+                                        <option value="Firefox">
+                                        <option value="Internet Explorer">
+                                        <option value="Opera">
+                                        <option value="Safari">
+                                        <option value="Microsoft Edge">
+                                    </datalist>
+                                </div>
+                                <!-- <div class="h-line">|</div>
                                 <div class="filter-search border-all">
                                     <i class="fas fa-border-all"></i>
                                 </div>
                                 <div class="filter-search border-all list-ul">
                                     <i class="fas fa-list-ul"></i>
-                                </div>
+                                </div> -->
                                 <div class="h-line">|</div>
                                 <div class="h-time">
-                                    <div class="mr-1">From</div>
+                                    <!-- <div class="mr-1">From</div> -->
                                     <div class="filter-search allnews mr-1">
-                                        <i class="fas fa-sort-amount-down-alt"></i>
+                                        <i class="far fa-calendar"></i>
                                         <input class="h-search" placeholder="2021-09-08">
                                         <i class="fas fa-chevron-down"></i>
                                     </div>
-                                    <div class="mr-1"> To </div>
+                                    <!-- <div class="mr-1"> To </div> -->
                                     <div class="filter-search allnews mr-1">
-                                        <i class="fas fa-sort-amount-down-alt"></i>
+                                        <i class="far fa-calendar"></i>
                                         <input class="h-search" placeholder="2021-09-08">
                                         <i class="fas fa-chevron-down"></i>
                                     </div>
@@ -242,167 +255,182 @@
                         </div>
                     </div>
                 </div>
-                <div class="stories-found">
-                    <div class="card">
-                        <div class="card-top">
-                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
-                        </div>
-                        <div class="card-body">
-                            <div class="status-section bg-orange">
-                                <span>IN REVIEW</span>
+                <div class="h-news-room">
+                    <div>
+                        <button type="button" class="btn btn-white ">Private Feeds</button>
+                        <button type="button" class="btn btn-white ">Assigned</button>
+                        <button type="button" class="btn btn-light-primary ">Proof reading</button>
+                        <button type="button" class="btn btn-white ">Accepted</button>
+                        <button type="button" class="btn btn-white ">Rejected</button>
+                        <button type="button" class="btn btn-white ">Re-work</button>
+                        <button type="button" class="btn btn-white ">Deleted</button>
+                        <button type="button" class="btn btn-white ">Yet to come</button>
+
+                    </div>
+
+                
+                    <div class="stories-found">
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
                             </div>
-                            <h5 class="card-title text-blue">Nida Fatima</h5>
-                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
-                            <div class="d-flex">
-                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
-                                <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                            <div class="card-body">
+                                <div class="status-section bg-orange">
+                                    <span>IN REVIEW</span>
+                                </div>
+                                <h5 class="card-title text-blue">Nida Fatima</h5>
+                                <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                <div class="d-flex">
+                                    <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                    <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                    <div class="card">
-                        <div class="card-top">
-                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
-                        </div>
-                        <div class="card-body">
-                            <div class="status-section bg-orange">
-                                <span>IN REVIEW</span>
+                        </div> 
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
                             </div>
-                            <h5 class="card-title text-blue">Nida Fatima</h5>
-                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
-                            <div class="d-flex">
-                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
-                                <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                            <div class="card-body">
+                                <div class="status-section bg-orange">
+                                    <span>IN REVIEW</span>
+                                </div>
+                                <h5 class="card-title text-blue">Nida Fatima</h5>
+                                <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                <div class="d-flex">
+                                    <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                    <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                    <div class="card">
-                        <div class="card-top">
-                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
-                        </div>
-                        <div class="card-body">
-                            <div class="status-section bg-orange">
-                                <span>IN REVIEW</span>
+                        </div> 
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
                             </div>
-                            <h5 class="card-title text-blue">Nida Fatima</h5>
-                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
-                            <div class="d-flex">
-                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
-                                <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                            <div class="card-body">
+                                <div class="status-section bg-orange">
+                                    <span>IN REVIEW</span>
+                                </div>
+                                <h5 class="card-title text-blue">Nida Fatima</h5>
+                                <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                <div class="d-flex">
+                                    <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                    <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                    <div class="card">
-                        <div class="card-top">
-                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
-                        </div>
-                        <div class="card-body">
-                            <div class="status-section bg-orange">
-                                <span>IN REVIEW</span>
+                        </div> 
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
                             </div>
-                            <h5 class="card-title text-blue">Nida Fatima</h5>
-                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
-                            <div class="d-flex">
-                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
-                                <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                            <div class="card-body">
+                                <div class="status-section bg-orange">
+                                    <span>IN REVIEW</span>
+                                </div>
+                                <h5 class="card-title text-blue">Nida Fatima</h5>
+                                <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                <div class="d-flex">
+                                    <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                    <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                    <div class="card">
-                        <div class="card-top">
-                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
-                        </div>
-                        <div class="card-body">
-                            <div class="status-section bg-orange">
-                                <span>IN REVIEW</span>
+                        </div> 
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
                             </div>
-                            <h5 class="card-title text-blue">Nida Fatima</h5>
-                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
-                            <div class="d-flex">
-                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
-                                <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                            <div class="card-body">
+                                <div class="status-section bg-orange">
+                                    <span>IN REVIEW</span>
+                                </div>
+                                <h5 class="card-title text-blue">Nida Fatima</h5>
+                                <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                <div class="d-flex">
+                                    <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                    <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                    <div class="card">
-                        <div class="card-top">
-                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
-                        </div>
-                        <div class="card-body">
-                            <div class="status-section bg-orange">
-                                <span>IN REVIEW</span>
+                        </div> 
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
                             </div>
-                            <h5 class="card-title text-blue">Nida Fatima</h5>
-                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
-                            <div class="d-flex">
-                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
-                                <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                            <div class="card-body">
+                                <div class="status-section bg-orange">
+                                    <span>IN REVIEW</span>
+                                </div>
+                                <h5 class="card-title text-blue">Nida Fatima</h5>
+                                <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                <div class="d-flex">
+                                    <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                    <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                    <div class="card">
-                        <div class="card-top">
-                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
-                        </div>
-                        <div class="card-body">
-                            <div class="status-section bg-orange">
-                                <span>IN REVIEW</span>
+                        </div> 
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
                             </div>
-                            <h5 class="card-title text-blue">Nida Fatima</h5>
-                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
-                            <div class="d-flex">
-                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
-                                <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                            <div class="card-body">
+                                <div class="status-section bg-orange">
+                                    <span>IN REVIEW</span>
+                                </div>
+                                <h5 class="card-title text-blue">Nida Fatima</h5>
+                                <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                <div class="d-flex">
+                                    <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                    <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                    <div class="card">
-                        <div class="card-top">
-                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
-                        </div>
-                        <div class="card-body">
-                            <div class="status-section bg-orange">
-                                <span>IN REVIEW</span>
+                        </div> 
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
                             </div>
-                            <h5 class="card-title text-blue">Nida Fatima</h5>
-                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
-                            <div class="d-flex">
-                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
-                                <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                            <div class="card-body">
+                                <div class="status-section bg-orange">
+                                    <span>IN REVIEW</span>
+                                </div>
+                                <h5 class="card-title text-blue">Nida Fatima</h5>
+                                <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                <div class="d-flex">
+                                    <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                    <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                    <div class="card">
-                        <div class="card-top">
-                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
-                        </div>
-                        <div class="card-body">
-                            <div class="status-section bg-orange">
-                                <span>IN REVIEW</span>
+                        </div> 
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
                             </div>
-                            <h5 class="card-title text-blue">Nida Fatima</h5>
-                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
-                            <div class="d-flex">
-                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
-                                <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                            <div class="card-body">
+                                <div class="status-section bg-orange">
+                                    <span>IN REVIEW</span>
+                                </div>
+                                <h5 class="card-title text-blue">Nida Fatima</h5>
+                                <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                <div class="d-flex">
+                                    <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                    <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                    <div class="card">
-                        <div class="card-top">
-                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
-                        </div>
-                        <div class="card-body">
-                            <div class="status-section bg-orange">
-                                <span>IN REVIEW</span>
+                        </div> 
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
                             </div>
-                            <h5 class="card-title text-blue">Nida Fatima</h5>
-                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
-                            <div class="d-flex">
-                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
-                                <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                            <div class="card-body">
+                                <div class="status-section bg-orange">
+                                    <span>IN REVIEW</span>
+                                </div>
+                                <h5 class="card-title text-blue">Nida Fatima</h5>
+                                <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                <div class="d-flex">
+                                    <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                    <div class="card-icon bg-grey"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </div>  
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>

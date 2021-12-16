@@ -73,11 +73,15 @@ img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+.m-0{
+  margin: 0 !important;
+}
 .pl-2 {
   padding-left: 30px !important;
 }
-
+.p-0{
+  padding: 0 !important;
+}
 .br-tl {
   border-top-left-radius: 8px;
 }
@@ -126,15 +130,28 @@ box-shadow: none !important;
   background: var(--primary-color);
   color: #FFF;
 }
-
+.btn-primary:hover{
+  background-color: #1f62c7;
+}
+.btn-light-primary{
+  background-color: rgba(48, 118, 223, 0.1);
+  color: var(--primary-color);
+  border: 1px solid rgba(48, 118, 223, 0.2);
+}
+.btn-light-primary:hover{
+  background-color:  #d2e1f9;
+  /* opacity: 0.7; */
+}
 .btn-skin {
   background-color: #F7F7F7;
   color: #373430;
 }
-
+.btn-skin:hover{
+  background-color: #e6e6e6;
+}
 .btn-skyblue {
   background-color: rgba(48, 118, 223, 0.1);
-  color: #3076DF;
+  color: var(--primary-color);
 }
 
 .btn-section .btn.btn-white{
@@ -162,7 +179,9 @@ box-shadow: none !important;
 .h-flex {
   display: flex;
 }
-
+.flex-start{
+  justify-content: flex-start;
+}
 .flex-end {
   justify-content: flex-end;
 }
@@ -910,7 +929,7 @@ progress#file {
 }
 
 .clear-filters i {
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 2px;
 }
 
@@ -1054,6 +1073,9 @@ progress#file {
 .btn-white {
   background-color: white;
   color: #000;
+}
+.btn-white:hover{
+  background-color: #f2f2f2;
 }
 
 .create-story-section-one {
@@ -1252,8 +1274,8 @@ progress#file {
 
 /* create story 3 end */
 /* create story 4 start */
-.configure-story-btn .btn.btn-white{
-  border: 1px solid #E7E7E7;
+.configure-story-btn{
+  margin-bottom: 20px;
 }
 .configure-story-btn .group-btn .btn{
   width: 112px;
@@ -1265,8 +1287,10 @@ progress#file {
   border-radius: 8px;
   /* border: 1px solid rgba(55, 52, 48, 0.1); */
 }
+
 .configure-desc-one .form-group{
   width: 100%;
+  margin: 0;
 }
 .configure-desc-one .form-control{
   position: relative;
@@ -1307,6 +1331,11 @@ progress#file {
 }
 .textCard{
   position: relative;
+  width: 208px;
+}
+.textCard-img img{
+  border: 1px solid #E7E7E7;
+  border-radius: 8px;
 }
 .textCard-Content{
   display: flex;
@@ -1326,6 +1355,7 @@ progress#file {
 }
 .configure-story .create-story-section-one.shadow-0{
   padding: 0;
+  margin-bottom: 0;
 }
 .configure-story .form-control{
   color: #000;
@@ -1345,6 +1375,11 @@ progress#file {
 }
 .configure-right-section{
   border: 1px solid #D8DADE;
+  margin-top: 12px;
+    border-radius: 5px;
+}
+.configure-right-section .card{
+  margin-right: 0;
 }
 .configure-right-top-inner{
   padding: 20px;
@@ -1372,14 +1407,169 @@ progress#file {
   color: #565C65;
   line-height: 1.5;
 }
+.configure-hashtags{
+  margin-bottom: 0;
+}
+/* .configure-right-section .create-story-2 .card{
+  margin-right: 0;
+} */
+.configure-right-section .card-top img{
+  border-radius: 0;
+}
+.configure-right-section .card-body{
+  background: #F8F8F9;
+}
+.card-website-url{
+  letter-spacing: 0.5px;
+}
+.configure-card-title{
+  line-height: 1.4;
+  font-weight: 600;
+  
+}
 .h-share{
   justify-content: space-around;
+  padding: 15px 0;
 }
 .h-share .btn{
   color: #000;
 }
+.config-bottom{
+  padding: 0 15px;
+}
+.publish-content{
+  margin-left: 12px;
+}
+.publish-content .publish-heading{
+  margin: 0;
+  line-height: 1;
+  font-weight: 600;
+}
+.publish-content .publish-desc{
+  font-size: 12px;
+}
+.h-flex.publish-section{
+  align-items: center;
+  margin: 20px 0;
+}
 /* create story 4 end */
+/* news room start */
+.h-news-room{
+  background: #FFFFFF;
+  box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.16), 0px 0px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  padding: 20px;
+}
+.h-news-room .btn{
+  margin: 0;
+  margin-bottom: 20px;
+}
+/* news room start */
+/* system managment start */
+.h-table{
+  width: 100%;
+  text-align: center;
+  border-spacing: 0px;
+}
+.h-table thead tr th{
+    padding: 12px 20px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    margin: 0px 0px;
+    border-right: none;
+}
+.h-table tbody tr td:first-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h-table input[type=checkbox],
+.h-table input[type=radio]{
+    margin: 0 6px 5px 0;
+}
+.h-table tbody tr:nth-child(odd){
+background-color: #fff;
+}
+.h-table tbody tr:nth-child(even){
+background-color: #F8F9FF;
+}
+.h-table tbody tr td{
+  position: relative;
+  font-size: 12px;
+  padding: 12px 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+  margin: 0;
+  height: 60px;
+}
 
+.table-icon{
+position: absolute;
+top: 25px;
+right: 10px
+}
+.h-table tbody tr td h6{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+  margin: 0;
+}
+.user-data{
+  overflow-x: auto;
+}
+.user-table,
+.user-table .user-data,
+.user-table .user-data th:first-child{
+  border-top-left-radius: 12px;
+}
+
+.user-table,
+.user-table .user-data,
+.user-table .user-data th:last-child{
+  border-top-right-radius: 12px;
+}
+.user-table,
+.user-table .user-data,
+.user-table .user-data td:last-child td:last-child{
+  border-bottom-left-radius: 12px;
+}
+.user-table .user-data,border,
+.user-table .h-table,
+.user-table tbody,
+.user-table tbody tr:last-child,
+.user-table tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 12px;
+}
+/* .user-data.border,
+.user-data .h-table,
+.user-data tbody,
+.user-data tbody tr:last-child{
+  border-bottom-right-radius: 12px;
+} */
+
+.user-email{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+.user-data-page .allnews{
+  width: 200px;
+  position: relative;
+}
+.user-data-page .allnews .fa-chevron-down{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.user-data-page .filter-search .h-search{
+  width: auto;
+}
 @media(max-width:1200px) {
   .create-story-btn {
     margin-bottom: 10px;
@@ -1493,6 +1683,9 @@ progress#file {
   .toggle-switch.h-flex {
     flex-direction: column;
   }
+  .h-news-room{
+    padding: 10px;
+  }
 }
 
 @media(max-width:350px) {
@@ -1519,4 +1712,10 @@ input::-webkit-calendar-picker-indicator {
 
 .dropdown-menu {
   display: none;
+}
+.sidebar li::[data-tippy-content]{
+  display: none;
+}
+.sidebar.open li[data-tippy-content]{
+  display: block;
 }
