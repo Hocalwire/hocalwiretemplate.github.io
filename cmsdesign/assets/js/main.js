@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+  // dropdown menu
+  $(".dropdown").click(function(){
+      $(this).find(".dropdown-menu").slideToggle("fast");
+  });
+
+
+
   var alterClass = function() {
     var ww = document.body.clientWidth;
     if (ww > 991) {
