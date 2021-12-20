@@ -34,11 +34,17 @@
         </div>
         <div class="sidebar-menu">
             <ul class="nav-list">
-                <li data-tippy-content="Dashboard" class="active">
+                <li data-tippy-content="Dashboard" class="active dropdown">
                     <a href="#">
                         <i class="fas fa-border-all"></i>
                         <span class="links_name">Dashboard</span>
                     </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">option 1</li>
+                        <li class="dropdown-item">option 2</li>
+                        <li class="dropdown-item">option 3</li>
+                        <li class="dropdown-item">option 4</li>
+                    </ul>
                 </li>
                 <li data-tippy-content="Subscribers">
                     <a href="#">
@@ -46,12 +52,18 @@
                         <span class="links_name">Subscribers</span>
                     </a>
                 </li>
-                <li data-tippy-content="Planning">
+                <li data-tippy-content="Planning" class="dropdown">
                     <a href="#">
                         <i class="fas fa-clipboard-list"></i>
                         <span class="links_name">Planning</span>
                     </a>
                     <i class="fas fa-chevron-right h-down-arrow"></i>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">Option 1</a></li>
+                        <li class="dropdown-item"><a href="#">option 2</a></li>
+                        <li class="dropdown-item"><a href="#">option 3</a></li>
+                        <li class="dropdown-item"><a href="#">option 4</a></li>
+                    </ul>
                 </li>
                 <li data-tippy-content="Reporters">
                     <a href="#">
@@ -78,7 +90,7 @@
                     </a>
                 </li>
                 <li data-tippy-content="Stories">
-                    <a href="#">
+                    <a href="story.html">
                         <i class="fas fa-book-open"></i>
                         <span class="links_name">Stories</span>
                     </a>
@@ -163,41 +175,50 @@
                                 <i class="fas fa-bell" aria-hidden="true"></i>
                             </span>
                         </div>
-                        <div class="profile">
+                        <div class="profile dropdown">
                             <div class="h-avatar">
                                 <img src="assets/images/avatar.jpeg" alt="avatar">
                             </div>
                             <div class="h-profile">
-                                <div class="profile-name">Hello
-                                    <span>Akhil!</span>
+                                <div class="profile-name">
+                                    Hello <span>Akhil!</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
                                 <div class="profile-email">
                                     akhil@hocalwire.com
                                 </div>
                             </div>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">option 1</li>
+                                <li class="dropdown-item">option 2</li>
+                                <li class="dropdown-item">option 3</li>
+                                <li class="dropdown-item">option 4</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="header">
-                <div class="row">
-                    <div class="col-lg-6 col-sm-12 col-xs-12">
-                        <div class="dashboard-section">
-                            <h4 class="Header-name"><i class="fas fa-arrow-left"></i> Create New Story</h4>
-                            <p class="header-content">All the latest updates an stats can be monitored here!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12 col-xs-12">
-                        <div class="d-flex flex-end create-story-btn">
-                            <div class="">
-                                <button type="button" class="btn btn-white"><i class="fas fa-plus"></i> Publish
-                                    Now</button>
-                                <button type="button" class="btn"><i class="fab fa-telegram-plane"></i> Submit for Review</button>
+                <div class="header-first-section">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <div class="dashboard-section">
+                                <h4 class="Header-name"><i class="fas fa-arrow-left"></i> Create New Story</h4>
+                                <p class="header-content">All the latest updates an stats can be monitored here!</p>
                             </div>
-                            <div class="">
-                                <button type="button" class="btn only-icon-btn"><i class="fas fa-eye"></i></button>
-                                <button type="button" class="btn only-icon-btn"><i class="far fa-save"></i></button>
-                                <button type="button" class="btn only-icon-btn"><i class="far fa-trash-alt"></i></button>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <div class="d-flex flex-end create-story-btn">
+                                <div class="">
+                                    <button type="button" class="btn btn-white"><i class="fas fa-plus"></i> Publish
+                                        Now</button>
+                                    <button type="button" class="btn"><i class="fab fa-telegram-plane"></i> Submit for Review</button>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn only-icon-btn"><i class="fas fa-eye"></i></button>
+                                    <button type="button" class="btn only-icon-btn"><i class="far fa-save"></i></button>
+                                    <button type="button" class="btn only-icon-btn"><i class="far fa-trash-alt"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -289,7 +310,7 @@
                 </div>
                 
                 <div class="text-right">
-                    <button type="button" class="btn btn-primary"><i class="fas fa-save"></i> Save and Continue</button>
+                    <a href="createStory4.html" class="btn btn-primary"><i class="fas fa-save"></i> Save and Continue</a>
                 </div>
             </div>
         </div>

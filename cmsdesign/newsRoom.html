@@ -34,11 +34,17 @@
         </div>
         <div class="sidebar-menu">
             <ul class="nav-list">
-                <li data-tippy-content="Dashboard" class="active">
+                <li data-tippy-content="Dashboard" class="active dropdown">
                     <a href="#">
                         <i class="fas fa-border-all"></i>
                         <span class="links_name">Dashboard</span>
                     </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">option 1</li>
+                        <li class="dropdown-item">option 2</li>
+                        <li class="dropdown-item">option 3</li>
+                        <li class="dropdown-item">option 4</li>
+                    </ul>
                 </li>
                 <li data-tippy-content="Subscribers">
                     <a href="#">
@@ -46,12 +52,18 @@
                         <span class="links_name">Subscribers</span>
                     </a>
                 </li>
-                <li data-tippy-content="Planning">
+                <li data-tippy-content="Planning" class="dropdown">
                     <a href="#">
                         <i class="fas fa-clipboard-list"></i>
                         <span class="links_name">Planning</span>
                     </a>
                     <i class="fas fa-chevron-right h-down-arrow"></i>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">Option 1</a></li>
+                        <li class="dropdown-item"><a href="#">option 2</a></li>
+                        <li class="dropdown-item"><a href="#">option 3</a></li>
+                        <li class="dropdown-item"><a href="#">option 4</a></li>
+                    </ul>
                 </li>
                 <li data-tippy-content="Reporters">
                     <a href="#">
@@ -78,7 +90,7 @@
                     </a>
                 </li>
                 <li data-tippy-content="Stories">
-                    <a href="#">
+                    <a href="story.html">
                         <i class="fas fa-book-open"></i>
                         <span class="links_name">Stories</span>
                     </a>
@@ -163,98 +175,98 @@
                                 <i class="fas fa-bell" aria-hidden="true"></i>
                               </span>
                         </div>
-                        <div class="profile">
+                        <div class="profile dropdown">
                             <div class="h-avatar">
                                 <img src="assets/images/avatar.jpeg" alt="avatar">
                             </div>
                             <div class="h-profile">
-                                <div class="profile-name">Hello
-                                    <span>Akhil!</span>
+                                <div class="profile-name">
+                                    Hello <span>Akhil!</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
                                 <div class="profile-email">
                                     akhil@hocalwire.com
                                 </div>
                             </div>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">option 1</li>
+                                <li class="dropdown-item">option 2</li>
+                                <li class="dropdown-item">option 3</li>
+                                <li class="dropdown-item">option 4</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="header">
+            <div class="header header-news-room">
                 <div class="dashboard-section">
                     <h4 class="Header-name">News Room</h4>
                     <p class="header-content">All the latest updates an stats can be monitored here!</p>
                 </div>
-            </div>
-            <div class="after-dashboard">
                 <div class="filter-section">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="d-flex flex-start">
-                                <h6 class="mr-1">7 Stories Found</h6>
-                                <div class="clear-filters">
-                                    <span>Clear Filters</span>
-                                    <i class="fas fa-times"></i>
+                    <div class="header-first-section">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="d-flex flex-start">
+                                    <h6 class="mr-1">7 Stories Found</h6>
+                                    <div class="clear-filters">
+                                        <span>Clear Filters</span>
+                                        <i class="fas fa-times"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="d-flex right-filter">
-                                <div class="filter-search mr-1">
-                                    <i class="fas fa-search"></i>
-                                    <input class="h-search" type="text" placeholder="Search" >
-                                </div>
-                                <div class="filter-search allnews mr-1">
-                                    <i class="fas fa-user-alt"></i>
-                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="All Teams" />
-                                    <i class="fas fa-chevron-down"></i>
-                                    <datalist id="All_news">
-                                        <option value="Chrome">
-                                        <option value="Firefox">
-                                        <option value="Internet Explorer">
-                                        <option value="Opera">
-                                        <option value="Safari">
-                                        <option value="Microsoft Edge">
-                                    </datalist>
-                                </div>
-                                <div class="filter-search allnews mr-1">
-                                    <i class="fas fa-microphone-alt"></i>
-                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="All Reporters" />
-                                    <i class="fas fa-chevron-down"></i>
-                                    <datalist id="All_news">
-                                        <option value="Chrome">
-                                        <option value="Firefox">
-                                        <option value="Internet Explorer">
-                                        <option value="Opera">
-                                        <option value="Safari">
-                                        <option value="Microsoft Edge">
-                                    </datalist>
-                                </div>
-                                <!-- <div class="h-line">|</div>
-                                <div class="filter-search border-all">
-                                    <i class="fas fa-border-all"></i>
-                                </div>
-                                <div class="filter-search border-all list-ul">
-                                    <i class="fas fa-list-ul"></i>
-                                </div> -->
-                                <div class="h-line">|</div>
-                                <div class="h-time">
-                                    <!-- <div class="mr-1">From</div> -->
-                                    <div class="filter-search allnews mr-1">
-                                        <i class="far fa-calendar"></i>
-                                        <input class="h-search" placeholder="2021-09-08">
-                                        <i class="fas fa-chevron-down"></i>
+                            <div class="col-md-9">
+                                <div class="d-flex right-filter">
+                                    <div class="filter-search mr-1">
+                                        <i class="fas fa-search"></i>
+                                        <input class="h-search" type="text" placeholder="Search" >
                                     </div>
-                                    <!-- <div class="mr-1"> To </div> -->
                                     <div class="filter-search allnews mr-1">
-                                        <i class="far fa-calendar"></i>
-                                        <input class="h-search" placeholder="2021-09-08">
+                                        <i class="fas fa-user-alt"></i>
+                                        <input class="h-search" list="All_news" name="myBrowser" placeholder="All Teams" />
                                         <i class="fas fa-chevron-down"></i>
+                                        <datalist id="All_news">
+                                            <option value="Chrome">
+                                            <option value="Firefox">
+                                            <option value="Internet Explorer">
+                                            <option value="Opera">
+                                            <option value="Safari">
+                                            <option value="Microsoft Edge">
+                                        </datalist>
+                                    </div>
+                                    <div class="filter-search allnews mr-1">
+                                        <i class="fas fa-microphone-alt"></i>
+                                        <input class="h-search" list="All_news" name="myBrowser" placeholder="All Reporters" />
+                                        <i class="fas fa-chevron-down"></i>
+                                        <datalist id="All_news">
+                                            <option value="Chrome">
+                                            <option value="Firefox">
+                                            <option value="Internet Explorer">
+                                            <option value="Opera">
+                                            <option value="Safari">
+                                            <option value="Microsoft Edge">
+                                        </datalist>
+                                    </div>
+                                    <div class="h-line">|</div>
+                                    <div class="h-time">
+                                        <div class="filter-search allnews mr-1">
+                                            <i class="far fa-calendar"></i>
+                                            <input class="h-search" placeholder="2021-09-08">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="filter-search allnews mr-1">
+                                            <i class="far fa-calendar"></i>
+                                            <input class="h-search" placeholder="2021-09-08">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="after-dashboard news-room-dashboard">
                 <div class="h-news-room">
                     <div>
                         <button type="button" class="btn btn-white ">Private Feeds</button>
@@ -265,10 +277,7 @@
                         <button type="button" class="btn btn-white ">Re-work</button>
                         <button type="button" class="btn btn-white ">Deleted</button>
                         <button type="button" class="btn btn-white ">Yet to come</button>
-
                     </div>
-
-                
                     <div class="stories-found">
                         <div class="card">
                             <div class="card-top">
