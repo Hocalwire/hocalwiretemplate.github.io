@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CMS</title>
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- tooltip -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Light slider -->
+    <link rel="stylesheet" href="file/css/lightslider.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/boostrap-light.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <!-- sidebar start -->
+    <div class="sidebar">
+        <!-- <div> -->
+        <div class="logo-details">
+            <div class="logo_name">
+                <img class="logo full-logo" src="assets/images/black_logo.png" alt="Hocalwire">
+                <img class="logo short-logo" src="assets/images/avatar.jpeg" alt="Hocalwire">
+            </div>
+            <div class="sidebar-bars">
+                <i class="fas fa-bars" id="btn"></i>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <ul class="nav-list">
+                <li data-tippy-content="Dashboard" class="active dropdown">
+                    <a href="#">
+                        <i class="fas fa-border-all"></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">option 1</li>
+                        <li class="dropdown-item">option 2</li>
+                        <li class="dropdown-item">option 3</li>
+                        <li class="dropdown-item">option 4</li>
+                    </ul>
+                </li>
+                <li data-tippy-content="Subscribers">
+                    <a href="#">
+                        <i class="fas fa-user-friends"></i>
+                        <span class="links_name">Subscribers</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Planning" class="dropdown">
+                    <a href="#">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span class="links_name">Planning</span>
+                    </a>
+                    <i class="fas fa-chevron-right h-down-arrow"></i>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">Option 1</a></li>
+                        <li class="dropdown-item"><a href="#">option 2</a></li>
+                        <li class="dropdown-item"><a href="#">option 3</a></li>
+                        <li class="dropdown-item"><a href="#">option 4</a></li>
+                    </ul>
+                </li>
+                <li data-tippy-content="Reporters">
+                    <a href="#">
+                        <i class="fas fa-microphone"></i>
+                        <span class="links_name">Reporters</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News Room">
+                    <a href="#">
+                        <i class="fas fa-receipt"></i>
+                        <span class="links_name">News Room</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Live Room">
+                    <a href="#">
+                        <i class="fas fa-play"></i>
+                        <span class="links_name">Live Room</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Buzz">
+                    <a href="#">
+                        <i class="fas fa-bolt"></i>
+                        <span class="links_name">Buzz</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Stories">
+                    <a href="story.html">
+                        <i class="fas fa-book-open"></i>
+                        <span class="links_name">Stories</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News">
+                    <a href="#">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="links_name">News</span>
+                    </a>
+                </li>
+                <li data-tippy-content="AMP Stories">
+                    <a href="#">
+                        <i class="fas fa-bolt"></i>
+                        <span class="links_name">AMP Stories</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News Bulletin">
+                    <a href="#">
+                        <i class="fas fa-globe"></i>
+                        <span class="links_name">News Bulletin</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Videofy">
+                    <a href="#">
+                        <i class="fas fa-video"></i>
+                        <span class="links_name">Videofy</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Social">
+                    <a href="#">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span class="links_name">Social</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Subscriptions">
+                    <a href="#">
+                        <i class="far fa-envelope"></i>
+                        <span class="links_name">Subscriptions</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Content Management">
+                    <a href="#">
+                        <i class="fas fa-indent"></i>
+                        <span class="links_name">Content Management</span>
+                    </a>
+                </li>
+                <li data-tippy-content="System Management">
+                    <a href="#">
+                        <i class="fas fa-indent"></i>
+                        <span class="links_name">System Management</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-powered-by">
+            <div class="profile-details">
+                <span>Powered By:</span>
+                <img class="poweredby-img" src="assets/images/black_logo.png">
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- sidebar end -->
+    <!-- main content start -->
+    <section class="home-section">
+        <div class="main-content">
+            <div class="d-flex flex-wrap top-header">
+                <div class="top-header-left">
+                    <form class="top-header-search">
+                        <button class="top-header-btn" type="submit"><i class="fas fa-search"></i></button>
+                        <input class="top-header-srch" type="text" placeholder="Search.." name="search2">
+                      </form>
+                </div>
+                <div class="top-header-right">
+                    <div class="right-profile flex-wrap">
+                        <div class="accent">
+                            <span class="color-light"></span>
+                            <span class="accent-name">Accent</span>
+                        </div>
+                        <div class="h-notification">
+                            <span class="fa-stack has-badge" data-count="1">
+                                <i class="fas fa-bell" aria-hidden="true"></i>
+                              </span>
+                        </div>
+                        <div class="profile dropdown">
+                            <div class="h-avatar">
+                                <img src="assets/images/avatar.jpeg" alt="avatar">
+                            </div>
+                            <div class="h-profile">
+                                <div class="profile-name">
+                                    Hello <span>Akhil!</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="profile-email">
+                                    akhil@hocalwire.com
+                                </div>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">option 1</li>
+                                <li class="dropdown-item">option 2</li>
+                                <li class="dropdown-item">option 3</li>
+                                <li class="dropdown-item">option 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header reporter-header">
+                <div class="d-flex reporter-header-first">
+                    <div class="dashboard-section">
+                        <h4 class="Header-name">Public Users or Reporters</h4>
+                        <p class="header-content">All the latest updates an stats can be monitored here!</p>
+                    </div>
+                    <div class="">
+                        <button type="button" class="btn btn-white"><i class="fas fa-plus"></i> Add New Reporter</button>
+                    </div>
+                </div>
+                <div class="d-flex my-2 heading-two analytics-header-second">
+                    <div class="d-flex right-filter">
+                        <div class="h-time">
+                            <div class="h-flex">
+                                <span class="mr-1">From</span>
+                                <div class="filter-search allnews mr-1">
+                                    <i class="far fa-calendar"></i>
+                                    <input class="h-search" placeholder="2021-09-08">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="h-flex">
+                                <span class="mr-1"> To </span>
+                                <div class="filter-search allnews mr-1">
+                                    <i class="far fa-calendar"></i>
+                                    <input class="h-search" placeholder="2021-09-08">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                        <div class="h-line">|</div>
+                        <div>Feed State</div>
+                        <div class="filter-search ml-1">
+                            <input class="h-search" type="text" placeholder="Accepted">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn"><i class="fas fa-sync"></i> Reset Filter</button>
+                    </div>
+                </div>
+            </div>
+            <div class="after-dashboard user-data-page">
+                <div class="create-story-section-one section-one">
+                    <div class="">
+                        <h6 class="form-heading">Basic Details</h6>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-50-per">
+                                <span>User Id</span>
+                                <h6 class="form-heading">21131</h6>
+                            </div>
+                            <div class="col-50-per">
+                                <span>Email</span>
+                                <h6 class="form-heading">kumar.dtckm@gmail.com</h6>
+                            </div>
+                            <div class="col-50-per">
+                                <span>Total Stories</span>
+                                <h6 class="form-heading">44</h6>
+                            </div>
+                            <div class="col-50-per">
+                                <span>Total Stories</span>
+                                <h6 class="form-heading">44</h6>
+                            </div>
+                            <div class="col-50-per">
+                                <span>In-Progress</span>
+                                <h6 class="form-heading">44</h6>
+                            </div>
+                            <div class="col-50-per">
+                                <span>User Id</span>
+                                <h6 class="form-heading">K. Kumar</h6>
+                            </div>
+                            <div class="col-50-per">
+                                <span>Phone No</span>
+                                <h6 class="form-heading">8277582434</h6>
+                            </div>
+                            <div class="col-50-per">
+                                <span>Accepted</span>
+                                <h6 class="form-heading">8277582434</h6>
+                            </div>
+                            <div class="col-50-per">
+                                <span>Accepted</span>
+                                <h6 class="form-heading">44</h6>
+                            </div>
+                            <div class="col-50-per">
+                                <span>Rejected</span>
+                                <h6 class="form-heading">44</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grap-section">
+
+                </div>
+                <div class="after-dashboard user-data-page">
+                    <div class="user-table">
+                        <div class="user-data border">
+                            <table class="h-table">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" id="user-heading"> <label for="user-heading"> User ID</label></th>
+                                        <th>Name</th>
+                                        <th>Phone No</th>
+                                        <th>Location</th>
+                                        <th>Registered On</th>
+                                        <th>URL</th>
+                                        <th>Group</th>
+                                        <th>Designation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
+                                        <td>
+                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
+                                            <span class="user-email">meenareportermm@gmail.com</span>
+                                        </td>
+                                        <td>9994473695</td>
+                                        <td>MM-VELLORE</td>
+                                        <td>2021-09-30 20:32</td>
+                                        <td>/hemant	</td>
+                                        <td>Lorem</td>
+                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
+                                        <td>
+                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
+                                            <span class="user-email">meenareportermm@gmail.com</span>
+                                        </td>
+                                        <td>9994473695</td>
+                                        <td>MM-VELLORE</td>
+                                        <td>2021-09-30 20:32</td>
+                                        <td>/hemant	</td>
+                                        <td>Lorem</td>
+                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
+                                        <td>
+                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
+                                            <span class="user-email">meenareportermm@gmail.com</span>
+                                        </td>
+                                        <td>9994473695</td>
+                                        <td>MM-VELLORE</td>
+                                        <td>2021-09-30 20:32</td>
+                                        <td>/hemant	</td>
+                                        <td>Lorem</td>
+                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
+                                        <td>
+                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
+                                            <span class="user-email">meenareportermm@gmail.com</span>
+                                        </td>
+                                        <td>9994473695</td>
+                                        <td>MM-VELLORE</td>
+                                        <td>2021-09-30 20:32</td>
+                                        <td>/hemant	</td>
+                                        <td>Lorem</td>
+                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
+                                        <td>
+                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
+                                            <span class="user-email">meenareportermm@gmail.com</span>
+                                        </td>
+                                        <td>9994473695</td>
+                                        <td>MM-VELLORE</td>
+                                        <td>2021-09-30 20:32</td>
+                                        <td>/hemant	</td>
+                                        <td>Lorem</td>
+                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
+                                        <td>
+                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
+                                            <span class="user-email">meenareportermm@gmail.com</span>
+                                        </td>
+                                        <td>9994473695</td>
+                                        <td>MM-VELLORE</td>
+                                        <td>2021-09-30 20:32</td>
+                                        <td>/hemant	</td>
+                                        <td>Lorem</td>
+                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
+                                        <td>
+                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
+                                            <span class="user-email">meenareportermm@gmail.com</span>
+                                        </td>
+                                        <td>9994473695</td>
+                                        <td>MM-VELLORE</td>
+                                        <td>2021-09-30 20:32</td>
+                                        <td>/hemant	</td>
+                                        <td>Lorem</td>
+                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
+                                        <td>
+                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
+                                            <span class="user-email">meenareportermm@gmail.com </span> 
+                                        </td>
+                                        <td>9994473695</td>
+                                        <td>MM-VELLORE</td>
+                                        <td>2021-09-30 20:32</td>
+                                        <td>/hemant	</td>
+                                        <td>Lorem</td>
+                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
+                                        <td>
+                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
+                                            <span class="user-email">meenareportermm@gmail.com</span>
+                                        </td>
+                                        <td>9994473695</td>
+                                        <td>MM-VELLORE</td>
+                                        <td>2021-09-30 20:32</td>
+                                        <td>/hemant	</td>
+                                        <td>Lorem</td>
+                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                    </tr>
+    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main content end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="file/js/lightslider.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lightSlider").lightSlider({
+                item: 5,
+                pauseOnHover: true,
+                controls: true,
+                autoWidth: false,
+                slideMove: 1,
+                slideMargin: 15 ,
+                pause: 5000,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                        item: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                        item: 1
+                        }
+                    }
+                ]
+            });
+            });
+      </script>
+</body>
+</html>
