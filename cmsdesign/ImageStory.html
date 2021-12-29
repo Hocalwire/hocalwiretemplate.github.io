@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CMS</title>
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- tooltip -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Light slider -->
+    <link rel="stylesheet" href="file/css/lightslider.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/boostrap-light.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <!-- sidebar start -->
+    <div class="sidebar">
+        <!-- <div> -->
+        <div class="logo-details">
+            <div class="logo_name">
+                <img class="logo full-logo" src="assets/images/black_logo.png" alt="Hocalwire">
+                <img class="logo short-logo" src="assets/images/avatar.jpeg" alt="Hocalwire">
+            </div>
+            <div class="sidebar-bars">
+                <i class="fas fa-bars" id="btn"></i>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <ul class="nav-list">
+                <li data-tippy-content="Dashboard">
+                    <a href="#">
+                        <i class="fas fa-border-all"></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Subscribers">
+                    <a href="#">
+                        <i class="fas fa-user-friends"></i>
+                        <span class="links_name">Subscribers</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Planning">
+                    <a href="#">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span class="links_name">Planning</span>
+                    </a>
+                    <i class="fas fa-chevron-right h-down-arrow"></i>
+                </li>
+                <li data-tippy-content="Reporters">
+                    <a href="#">
+                        <i class="fas fa-microphone"></i>
+                        <span class="links_name">Reporters</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News Room">
+                    <a href="#">
+                        <i class="fas fa-receipt"></i>
+                        <span class="links_name">News Room</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Live Room">
+                    <a href="#">
+                        <i class="fas fa-play"></i>
+                        <span class="links_name">Live Room</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Buzz">
+                    <a href="#">
+                        <i class="fas fa-bolt"></i>
+                        <span class="links_name">Buzz</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Stories" class="active">
+                    <a href="story.html">
+                        <i class="fas fa-book-open"></i>
+                        <span class="links_name">Stories</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News">
+                    <a href="#">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="links_name">News</span>
+                    </a>
+                </li>
+                <li data-tippy-content="AMP Stories">
+                    <a href="#">
+                        <i class="fas fa-bolt"></i>
+                        <span class="links_name">AMP Stories</span>
+                    </a>
+                </li>
+                <li data-tippy-content="News Bulletin">
+                    <a href="#">
+                        <i class="fas fa-globe"></i>
+                        <span class="links_name">News Bulletin</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Videofy">
+                    <a href="#">
+                        <i class="fas fa-video"></i>
+                        <span class="links_name">Videofy</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Social">
+                    <a href="#">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span class="links_name">Social</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Subscriptions">
+                    <a href="#">
+                        <i class="far fa-envelope"></i>
+                        <span class="links_name">Subscriptions</span>
+                    </a>
+                </li>
+                <li data-tippy-content="Content Management">
+                    <a href="#">
+                        <i class="fas fa-indent"></i>
+                        <span class="links_name">Content Management</span>
+                    </a>
+                </li>
+                <li data-tippy-content="System Management">
+                    <a href="#">
+                        <i class="fas fa-indent"></i>
+                        <span class="links_name">System Management</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-powered-by">
+            <div class="profile-details">
+                <span>Powered By:</span>
+                <img class="poweredby-img" src="assets/images/black_logo.png">
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- sidebar end -->
+    <!-- main content start -->
+    <section class="home-section home-section-1">
+        <div class="main-content">
+            <div class="d-flex flex-wrap top-header">
+                <div class="top-header-left">
+                    <form class="top-header-search">
+                        <button class="top-header-btn" type="submit"><i class="fas fa-search"></i></button>
+                        <input class="top-header-srch" type="text" placeholder="Search.." name="search2">
+                      </form>
+                </div>
+                <div class="top-header-right">
+                    <div class="right-profile flex-wrap">
+                        <div class="accent">
+                            <span class="color-light"></span>
+                            <span class="accent-name">Accent</span>
+                        </div>
+                        <div class="h-notification">
+                            <span class="fa-stack has-badge" data-count="1">
+                                <i class="fas fa-bell" aria-hidden="true"></i>
+                              </span>
+                        </div>
+                        <div class="profile">
+                            <div class="h-avatar">
+                                <img src="assets/images/avatar.jpeg" alt="avatar">
+                            </div>
+                            <div class="h-profile">
+                                <div class="profile-name">Hello
+                                    <span>Akhil!</span>
+                                </div>
+                                <div class="profile-email">
+                                    akhil@hocalwire.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="d-flex h-dashboard">
+                    <div class="dashboard-section">
+                        <h4 class="Header-name">Image Gallery</h4>
+                        <p class="header-content">All the latest updates an stats can be monitored here!</p>
+                    </div>
+                    <div class="h-flex flex-end">
+                        <div class="mr-1 create-story-button">
+                            <a href="createStory1.html" type="button" class="btn btn-white"><i class="fas fa-plus"></i> Add New</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="after-dashboard">
+                <div class="tab-inner">
+                    <div class="tab-heading">
+                        <div class="tabsingle br_left tab-active" target="1" style="cursor:pointer;"> All images </div>
+                        <div class="tabsingle br_left" target="2" style="cursor:pointer;"> Live Images </div>
+                        <div class="tabsingle br_left" target="3" style="cursor:pointer;"> Videos </div>
+                        <div class="tabsingle br_left" target="4" style="cursor:pointer;"> Overlay </div>
+                        <div class="tabsingle br_left" target="5" style="cursor:pointer;"> Icons </div>
+                    </div>
+                    <div class="bg-white tab-content-section">
+                        <div class="filter-section d-flex filter-section-bg-white">
+                            <div class="d-flex flex-start left-filter">
+                                <h6 class="mr-1">7 Stories Found</h6>
+                                <div class="clear-filters">
+                                    <span>Clear Filters</span>
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="d-flex right-filter">
+                                <div class="filter-search mr-1">
+                                    <i class="fas fa-search"></i>
+                                    <input class="h-search" type="text" placeholder="Search">
+                                </div>
+                                <div class="h-line">|</div>
+                                <div class="h-time">
+                                    <div class="h-flex">
+                                        <span class="mr-1">From</span>
+                                        <div class="filter-search allnews mr-1">
+                                            <i class="fas fa-sort-amount-down-alt"></i>
+                                            <input class="h-search" placeholder="2021-09-08">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="h-flex">
+                                        <span class="mr-1"> To </span>
+                                        <div class="filter-search allnews mr-1">
+                                            <i class="fas fa-sort-amount-down-alt"></i>
+                                            <input class="h-search" placeholder="2021-09-08">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div1" class="targetdiv">
+                            <div>
+                                <div class="stories-found">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="https://www.livelaw.in/h-upload/2021/09/10/500x300_400314-justice-devan-ramachandran.jpg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="https://www.livelaw.in/h-upload/2021/09/10/500x300_400314-justice-devan-ramachandran.jpg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>       
+                        <div id="div2" class="targetdiv" style="display:none;">
+                            <div>
+                                <div class="stories-found">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="https://www.livelaw.in/h-upload/2021/09/10/500x300_400314-justice-devan-ramachandran.jpg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="https://www.livelaw.in/h-upload/2021/09/10/500x300_400314-justice-devan-ramachandran.jpg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>       
+                        <div id="div3" class="targetdiv" style="display:none;">
+                            <div>
+                                <div class="stories-found">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="https://www.livelaw.in/h-upload/2021/09/10/500x300_400314-justice-devan-ramachandran.jpg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="https://www.livelaw.in/h-upload/2021/09/10/500x300_400314-justice-devan-ramachandran.jpg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="https://www.livelaw.in/h-upload/2021/09/10/500x300_400314-justice-devan-ramachandran.jpg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div4" class="targetdiv" style="display:none;">
+                            <div>
+                                <div class="stories-found">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="https://www.livelaw.in/h-upload/2021/09/10/500x300_400314-justice-devan-ramachandran.jpg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="https://www.livelaw.in/h-upload/2021/09/10/500x300_400314-justice-devan-ramachandran.jpg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div5" class="targetdiv" style="display:none;">
+                            <div>
+                                <div class="stories-found">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-blue">Nida Fatima</h5>
+                                            <p class="card-text">ICMA should take actions against india private labs, says Delhi High Court</p>
+                                            <div class="d-flex">
+                                                <time class="card-time">Sep 6, 2021 3:50 PM</time>
+                                                <div class="card-icon bg-grey dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">option 1</li>
+                                                        <li class="dropdown-item">option 2</li>
+                                                        <li class="dropdown-item">option 3</li>
+                                                        <li class="dropdown-item">option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main content end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="file/js/lightslider.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

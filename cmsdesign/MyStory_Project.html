@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CMS</title>
+    <title>CMS</title>
     <!-- font family -->
     <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Open+Sans&display=swap" rel="stylesheet">
     <!-- font-awesome -->
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/boostrap-light.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
     <!-- sidebar start -->
     <div class="sidebar">
@@ -155,14 +157,14 @@
     </div>
     <!-- sidebar end -->
     <!-- main content start -->
-    <section class="home-section">
+    <section class="home-section integration-page planning-config">
         <div class="main-content">
             <div class="d-flex flex-wrap top-header">
                 <div class="top-header-left">
                     <form class="top-header-search">
                         <button class="top-header-btn" type="submit"><i class="fas fa-search"></i></button>
                         <input class="top-header-srch" type="text" placeholder="Search.." name="search2">
-                      </form>
+                    </form>
                 </div>
                 <div class="top-header-right">
                     <div class="right-profile flex-wrap">
@@ -173,7 +175,7 @@
                         <div class="h-notification">
                             <span class="fa-stack has-badge" data-count="1">
                                 <i class="fas fa-bell" aria-hidden="true"></i>
-                              </span>
+                            </span>
                         </div>
                         <div class="profile dropdown">
                             <div class="h-avatar">
@@ -198,108 +200,223 @@
                     </div>
                 </div>
             </div>
-            <div class="header reporter-header">
-                <div class="d-flex reporter-header-first">
+            <div class="header">
+                <div class="d-flex align-baseline reporter-header-first">
                     <div class="dashboard-section">
-                        <h4 class="Header-name">Reporters</h4>
+                        <h4 class="Header-name">Partner Configurations</h4>
                         <p class="header-content">All the latest updates an stats can be monitored here!</p>
                     </div>
                     <div class="">
-                        <button type="button" class="btn btn-white"><i class="fas fa-plus"></i> Add New Reporter</button>
+                        <button type="button" class="btn btn-white"><i class="fas fa-plus"></i>Create Project</button>
                     </div>
                 </div>
-                <div class="d-flex my-2 heading-two reporter-header-second">
-                    <div>
-                        <button type="button" class="btn bg-transparent">
-                            <input id="reporter" type="checkbox">
-                            <label for="reporter">REPORTERS</label>
-                        </button>
-                        <button type="button" class="btn border-1"> 
-                            <input id="assignment" type="checkbox">
-                            <label for="assignment">ASSIGNMENTS</label>
-                        </button>
+                <div class="filter-section d-flex">
+                    <div class="d-flex flex-start left-filter">
+                        <h6 class="mr-1">My Editorial</h6>
                     </div>
-                    <div>
+                    <div class="d-flex right-filter">
                         <div class="filter-search mr-1">
                             <i class="fas fa-search"></i>
                             <input class="h-search" type="text" placeholder="Search">
                         </div>
+                        <div class="h-line">|</div>
+                        <div class="item-count">
+                            <div><span class="">Show</span></div>
+                            <div class="item-count-select">
+                                <select name="" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                  </select>
+                            </div>
+                            <div><span class="mr-1">Entries</span></div>
+                        </div>
+                        <div class="h-line">|</div>
+                        <div class="h-time">
+                            <div class="h-flex">
+                                <span class="mr-1">From</span>
+                                <div class="filter-search allnews mr-1">
+                                    <i class="fas fa-sort-amount-down-alt"></i>
+                                    <input type="text" class="h-search" placeholder="2021-09-08">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="h-flex">
+                                <span class="mr-1"> To </span>
+                                <div class="filter-search allnews mr-1">
+                                    <i class="fas fa-sort-amount-down-alt"></i>
+                                    <input type="text" class="h-search" placeholder="2021-09-08">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-line">|</div>
+                        <div class="h-flex">
+                            <div class="out-of-left"><i class="fas fa-chevron-left"></i></div>
+                            <div class="out-of-middle"><h6 class="out-of-count">05 of 20</h6></div>
+                            <div class="out-of-right"><i class="fas fa-chevron-right"></i></div>
+                        </div>
                     </div>
                 </div>
-                <div class="filter-section d-flex reporter-header-third">
-                    <!-- <div class="row"> -->
-                        <!-- <div class="col-md-3"> -->
-                            <div class="d-flex flex-start">
-                                <h6 class="mr-1">12 Users Found</h6>
-                                <div class="clear-filters">
-                                    <span>Clear Filters</span>
-                                    <i class="fas fa-times"></i>
-                                </div>
-                            </div>
-                        <!-- </div> -->
-                        <!-- <div class="col-md-9"> -->
-                            <div class="h-flex right-filter">
-                                <div class="filter-search allnews mr-1">
-                                    <i class="fas fa-user-alt"></i>
-                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="Assignment Type" />
-                                    <i class="fas fa-chevron-down"></i>
-                                    <datalist id="All_news">
-                                        <option value="Chrome">
-                                        <option value="Firefox">
-                                        <option value="Internet Explorer">
-                                        <option value="Opera">
-                                        <option value="Safari">
-                                        <option value="Microsoft Edge">
-                                    </datalist>
-                                </div>
-                                <div class="filter-search allnews mr-1">
-                                    <i class="fas fa-microphone-alt"></i>
-                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="Assignment Format" />
-                                    <i class="fas fa-chevron-down"></i>
-                                    <datalist id="All_news">
-                                        <option value="Chrome">
-                                        <option value="Firefox">
-                                        <option value="Internet Explorer">
-                                        <option value="Opera">
-                                        <option value="Safari">
-                                        <option value="Microsoft Edge">
-                                    </datalist>
-                                </div>
-                                <div class="filter-search allnews mr-1">
-                                    <i class="fas fa-microphone-alt"></i>
-                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="State" />
-                                    <i class="fas fa-chevron-down"></i>
-                                    <datalist id="All_news">
-                                        <option value="Chrome">
-                                        <option value="Firefox">
-                                        <option value="Internet Explorer">
-                                        <option value="Opera">
-                                        <option value="Safari">
-                                        <option value="Microsoft Edge">
-                                    </datalist>
-                                </div>
-                                <div class="filter-search allnews mr-1">
-                                    <i class="fas fa-microphone-alt"></i>
-                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="Category" />
-                                    <i class="fas fa-chevron-down"></i>
-                                    <datalist id="All_news">
-                                        <option value="Chrome">
-                                        <option value="Firefox">
-                                        <option value="Internet Explorer">
-                                        <option value="Opera">
-                                        <option value="Safari">
-                                        <option value="Microsoft Edge">
-                                    </datalist>
-                                </div>
-                            </div>
-                        <!-- </div> -->
-                    <!-- </div> -->
-                </div>
             </div>
-            <div class="after-dashboard user-data-page">
-                
-                <div class="h-map">
-                    <h1>Map Section</h1>
+            <div class="after-dashboard">
+                <div class="i-table table-4 table-5">
+                    <table>
+                        <thead>
+                            <tr align="left">
+                                <th align="center">ID</th>
+                                <th>Topics</th>
+                                <th>Heading</th>
+                                <th>Status</th>
+                                <th>Deadline</th>
+                                <th colspan="2">Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="center">26161</td>
+                                <td>Meenatchi Sundareshwari</td>
+                                <td>9994473695</td>
+                                <td class="text-pending">Pending</td>
+                                <td>/hemant	</td>
+                                <td>Lorem</td>
+                                <td><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+                            <tr>
+                                <td align="center">26161</td>
+                                <td>Meenatchi Sundareshwari</td>
+                                <td>9994473695</td>
+                                <td class="text-pending">Pending</td>
+                                <td>/hemant	</td>
+                                <td>Lorem</td>
+                                <td><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+                            <tr>
+                                <td align="center">26161</td>
+                                <td>Meenatchi Sundareshwari</td>
+                                <td>9994473695</td>
+                                <td class="text-pending">Pending</td>
+                                <td>/hemant	</td>
+                                <td>Lorem</td>
+                                <td><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+                            <tr>
+                                <td align="center">26161</td>
+                                <td>Meenatchi Sundareshwari</td>
+                                <td>9994473695</td>
+                                <td class="text-pending">Pending</td>
+                                <td>/hemant	</td>
+                                <td>Lorem</td>
+                                <td><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="filter-section d-flex filter-section-bg-white">
+                    <div class="d-flex flex-start left-filter">
+                        <h6 class="mr-1">For Review</h6>
+                    </div>
+                    <div class="d-flex right-filter">
+                        <div class="filter-search mr-1">
+                            <i class="fas fa-search"></i>
+                            <input class="h-search" type="text" placeholder="Search">
+                        </div>
+                        <div class="h-line">|</div>
+                        <div class="item-count">
+                            <div><span class="">Show</span></div>
+                            <div class="item-count-select">
+                                <select name="" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                  </select>
+                            </div>
+                            <div><span class="mr-1">Entries</span></div>
+                        </div>
+                        <div class="h-line">|</div>
+                        <div class="h-time">
+                            <div class="h-flex">
+                                <span class="mr-1">From</span>
+                                <div class="filter-search allnews mr-1">
+                                    <i class="fas fa-sort-amount-down-alt"></i>
+                                    <input type="text" class="h-search" placeholder="2021-09-08">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="h-flex">
+                                <span class="mr-1"> To </span>
+                                <div class="filter-search allnews mr-1">
+                                    <i class="fas fa-sort-amount-down-alt"></i>
+                                    <input type="text" class="h-search" placeholder="2021-09-08">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-line">|</div>
+                        <div class="h-flex">
+                            <div class="out-of-left"><i class="fas fa-chevron-left"></i></div>
+                            <div class="out-of-middle"><h6 class="out-of-count">05 of 20</h6></div>
+                            <div class="out-of-right"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="i-table table-4 table-5 mt-2">
+                    <table>
+                        <thead>
+                            <tr align="left">
+                                <th align="center">ID</th>
+                                <th>Topics</th>
+                                <th>Heading</th>
+                                <th>Status</th>
+                                <th>Deadline</th>
+                                <th colspan="2">Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="center">26161</td>
+                                <td>Meenatchi Sundareshwari</td>
+                                <td>9994473695</td>
+                                <td class="text-pending">Pending</td>
+                                <td>/hemant	</td>
+                                <td>Lorem</td>
+                                <td><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+                            <tr>
+                                <td align="center">26161</td>
+                                <td>Meenatchi Sundareshwari</td>
+                                <td>9994473695</td>
+                                <td class="text-pending">Pending</td>
+                                <td>/hemant	</td>
+                                <td>Lorem</td>
+                                <td><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+                            <tr>
+                                <td align="center">26161</td>
+                                <td>Meenatchi Sundareshwari</td>
+                                <td>9994473695</td>
+                                <td class="text-pending">Pending</td>
+                                <td>/hemant	</td>
+                                <td>Lorem</td>
+                                <td><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+                            <tr>
+                                <td align="center">26161</td>
+                                <td>Meenatchi Sundareshwari</td>
+                                <td>9994473695</td>
+                                <td class="text-pending">Pending</td>
+                                <td>/hemant	</td>
+                                <td>Lorem</td>
+                                <td><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -311,4 +428,5 @@
     <script src="file/js/lightslider.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

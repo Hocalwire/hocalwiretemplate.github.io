@@ -155,7 +155,7 @@
     </div>
     <!-- sidebar end -->
     <!-- main content start -->
-    <section class="home-section integration-page subscription-page">
+    <section class="home-section integration-page">
         <div class="main-content">
             <div class="d-flex flex-wrap top-header">
                 <div class="top-header-left">
@@ -201,112 +201,156 @@
             <div class="header">
                 <div class="d-flex align-baseline reporter-header-first">
                     <div class="dashboard-section">
-                        <h4 class="Header-name">Plans</h4>
+                        <h4 class="Header-name">Custom Content</h4>
                         <p class="header-content">All the latest updates an stats can be monitored here!</p>
                     </div>
-                    <div>
-                        <button type="button" class="btn btn-white border"><i class="fas fa-plus"></i> Add New Plan</button>
-
+                    <div class="h-flex">
+                        <button type="button" class="btn btn-white border"><i class="fas fa-globe"></i> Make it Live</button>
+                        <button type="button" class="btn"><i class="far fa-calendar-check"></i> Schedule for Later</button>
+                        <div class="h-line">|</div>
+                        <button data-tippy-content="View" type="button" class="btn only-icon-btn"><i class="fas fa-save"></i></button>
+                        <button data-tippy-content="View" type="button" class="btn only-icon-btn"><i class="fas fa-times"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="after-dashboard h-integration">
-                <div class="section-one">
+            <div class="after-dashboard">
+                <div class="create-story-section-one custom-content-section">
+                    <div class="custom-content-section-two">
+                        <h6 class="form-heading">Book</h6>
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label>Heading of Book</label><br>
+                                    <input type="text" class="form-control" placeholder="Heading of Book">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label>Name of Book</label><br>
+                                    <input type="text" class="form-control" placeholder="Name of Book">
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label>Price</label><br>
+                                            <input type="text" class="form-control" placeholder="Price in Rupees">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label>Author</label><br>
+                                            <input type="text" class="form-control" placeholder="Author">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label>Review Author</label><br>
+                                            <input type="text" class="form-control" placeholder="Review Author">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label>Book Short Description</label><br>
+                                    <input type="text" class="form-control" placeholder="Book Short Description">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group m-0">
+                                    <label>Publisher</label><br>
+                                    <input type="text" class="form-control" placeholder="Publisher">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group m-0">
+                                    <label>Keywords</label><br>
+                                    <input type="text" class="form-control" placeholder="Keywords">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="create-story-section-one p-sm-2 p-xs-1 custom-content-section">
+                    <h6 class="form-heading">Cover Images and Media</h6>
                     <div class="row">
-                        <div class="col-lg-3 col-sm-6 col-xs-12">
-                            <div class="card plan-card">
-                                <div class="card-top">
-                                    <h5 class="card-top-heading text-blue">Free Yearly Trial Plan</h5>
+                        <div class="col-50-per">
+                            <div class="textCard">
+                                <div class="textCard-img">
+                                    <img src="assets/images/articleimage.jpeg" alt="image" class="textCard-top-img">
                                 </div>
-                                <div class="card-body">
-                                    <div>
-                                        <div class="card-list">Free Access to Paid Story for a year.</div>
-                                        <div class="card-list">Read the most authentic NEWS from the most recognized editors.</div>
-                                        <div class="card-list">All Categories</div>
-                                        <div class="card-list">Read the most authentic NEWS from the most recognized editors.</div>
-                                    </div>
-                                    <div class="card-body-bottom-button d-flex">
-                                        <div class="card-body-left-btn">
-                                            <button type="button" class="btn btn-light-primary"><i class="fas fa-check"></i> Live Now</button>
-                                        </div>
-                                        <div class="card-body-right-btn">
-                                            <button type="button" class="btn btn-white border"><i class="fas fa-indent"></i> Actions <i class="fas fa-chevron-down ml-1"></i></button>
-                                        </div>
-                                    </div>
+                                <div class="textCard-Content">
+                                    <div class="textCard-content-icon"><i class="fas fa-ellipsis-v"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 col-xs-12">
-                            <div class="card plan-card">
-                                <div class="card-top">
-                                    <h5 class="card-top-heading text-blue">Free Yearly Trial Plan</h5>
+                        <div class="col-50-per">
+                            <div class="textCard">
+                                <div class="textCard-img">
+                                    <img src="assets/images/articleimage.jpeg" alt="image" class="textCard-top-img">
                                 </div>
-                                <div class="card-body">
-                                    <div>
-                                        <div class="card-list">Free Access to Paid Story for a year.</div>
-                                        <div class="card-list">Read the most authentic NEWS from the most recognized editors.</div>
-                                        <div class="card-list">All Categories</div>
-                                        <div class="card-list">Read the most authentic NEWS from the most recognized editors.</div>
-                                    </div>
-                                    <div class="card-body-bottom-button d-flex">
-                                        <div class="card-body-left-btn">
-                                            <button type="button" class="btn btn-outline-blue"><i class="fas fa-check"></i> Live Now</button>
-                                        </div>
-                                        <div class="card-body-right-btn">
-                                            <button type="button" class="btn btn-white border"><i class="fas fa-indent"></i> Actions <i class="fas fa-chevron-down ml-1"></i></button>
-
-                                        </div>
-                                    </div>
+                                <div class="textCard-Content">
+                                    <div class="textCard-content-icon"><i class="fas fa-ellipsis-v"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 col-xs-12">
-                            <div class="card plan-card">
-                                <div class="card-top">
-                                    <h5 class="card-top-heading text-blue">Free Yearly Trial Plan</h5>
+                        <div class="col-50-per">
+                            <div class="textCard">
+                                <div class="textCard-img">
+                                    <img src="assets/images/articleimage.jpeg" alt="image" class="textCard-top-img">
                                 </div>
-                                <div class="card-body">
-                                    <div>
-                                        <div class="card-list">Free Access to Paid Story for a year.</div>
-                                        <div class="card-list">Read the most authentic NEWS from the most recognized editors.</div>
-                                        <div class="card-list">All Categories</div>
-                                        <div class="card-list">Read the most authentic NEWS from the most recognized editors.</div>
-                                    </div>
-                                    <div class="card-body-bottom-button d-flex">
-                                        <div class="card-body-left-btn">
-                                            <button type="button" class="btn btn-outline-blue"><i class="fas fa-check"></i> Live Now</button>
-                                        </div>
-                                        <div class="card-body-right-btn">
-                                            <button type="button" class="btn btn-white border"><i class="fas fa-indent"></i> Actions <i class="fas fa-chevron-down ml-1"></i></button>
-
-                                        </div>
-                                    </div>
+                                <div class="textCard-Content">
+                                    <div class="textCard-content-icon"><i class="fas fa-ellipsis-v"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 col-xs-12">
-                            <div class="card plan-card">
-                                <div class="card-top">
-                                    <h5 class="card-top-heading text-blue">Free Yearly Trial Plan</h5>
+                        <div class="col-50-per">
+                            <div class="textCard">
+                                <div class="textCard-img">
+                                    <img src="assets/images/articleimage.jpeg" alt="image" class="textCard-top-img">
                                 </div>
-                                <div class="card-body">
-                                    <div>
-                                        <div class="card-list">Free Access to Paid Story for a year.</div>
-                                        <div class="card-list">Read the most authentic NEWS from the most recognized editors.</div>
-                                        <div class="card-list">All Categories</div>
-                                        <div class="card-list">Read the most authentic NEWS from the most recognized editors.</div>
-                                    </div>
-                                    <div class="card-body-bottom-button d-flex">
-                                        <div class="card-body-left-btn">
-                                            <button type="button" class="btn btn-outline-blue"><i class="fas fa-check"></i> Live Now</button>
-                                        </div>
-                                        <div class="card-body-right-btn">
-                                            <button type="button" class="btn btn-white border"><i class="fas fa-indent mr-1"></i> Actions <i class="fas fa-chevron-down ml-1"></i></button>
-                                        </div>
-                                    </div>
+                                <div class="textCard-Content">
+                                    <div class="textCard-content-icon"><i class="fas fa-ellipsis-v"></i></div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="btn-section">
+                        <button type="button" class="btn btn-white border"><i class="fas fa-paperclip"></i> Upload Image</button>
+                        <button type="button" class="btn btn-white border"><i class="fab fa-youtube"></i> Add Youtube</button>
+                    </div>
+            </div>
+            <div class="create-story-section-one ">
+                <h6 class="form-heading">Cover Images and Media</h6>
+                <div class="text-editor">
+                    <div class="text-editor-icons">
+                        <button type="btn" class="editor-icon"><i class="fas fa-bold"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-italic"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-underline"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-strikethrough"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-font"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-paint-brush"></i></button>
+                        <button type="btn" class="editor-icon"><i class="far fa-smile"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-lira-sign"></i><i class="fas fa-sort-down"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-align-left"></i><i class="fas fa-sort-down"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-list-ol"></i><i class="fas fa-sort-down"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-list-ul"></i><i class="fas fa-sort-down"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-indent"></i><i class="fas fa-sort-down"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-indent"></i></button>
+                        <button type="btn" class="editor-icon disable"><i class="fas fa-indent"></i></button>
+                        <button type="btn" class="editor-icon"><i class="far fa-image"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-link"></i></button>
+                        <button type="btn" class="editor-icon"><i class="far fa-file"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-video"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-undo"></i></button>
+                        <button type="btn" class="editor-icon"><i class="fas fa-redo"></i></button>
+                    </div>
+                    <div class="main-editor-text"></div>
+                    <div class="editor-bottom">
+                        <span class="editor-bottom-count">Character Count: 0</span>
+                        <span class="editor-bottom-count">Word Count: 1</span>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/boostrap-light.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
     <!-- sidebar start -->
     <div class="sidebar">
@@ -155,14 +157,14 @@
     </div>
     <!-- sidebar end -->
     <!-- main content start -->
-    <section class="home-section">
+    <section class="home-section integration-page">
         <div class="main-content">
             <div class="d-flex flex-wrap top-header">
                 <div class="top-header-left">
                     <form class="top-header-search">
                         <button class="top-header-btn" type="submit"><i class="fas fa-search"></i></button>
                         <input class="top-header-srch" type="text" placeholder="Search.." name="search2">
-                      </form>
+                    </form>
                 </div>
                 <div class="top-header-right">
                     <div class="right-profile flex-wrap">
@@ -173,7 +175,7 @@
                         <div class="h-notification">
                             <span class="fa-stack has-badge" data-count="1">
                                 <i class="fas fa-bell" aria-hidden="true"></i>
-                              </span>
+                            </span>
                         </div>
                         <div class="profile dropdown">
                             <div class="h-avatar">
@@ -198,82 +200,65 @@
                     </div>
                 </div>
             </div>
-            <div class="header reporter-header">
-                <div class="d-flex reporter-header-first">
+            <div class="header">
+                <div class="d-flex align-baseline reporter-header-first">
                     <div class="dashboard-section">
-                        <h4 class="Header-name">Reporters</h4>
+                        <h4 class="Header-name">Partner Configurations</h4>
                         <p class="header-content">All the latest updates an stats can be monitored here!</p>
                     </div>
-                    <div class="">
-                        <button type="button" class="btn btn-white"><i class="fas fa-plus"></i> Add New Reporter</button>
-                    </div>
-                </div>
-                <div class="d-flex my-2 heading-two reporter-header-second">
-                    <div>
-                        <button type="button" class="btn border-1">
-                            <input id="reporter" type="checkbox">
-                            <label for="reporter">REPORTERS</label>
-                        </button>
-                        <button type="button" class="btn bg-transparent"> 
-                            <input id="assignment" type="checkbox">
-                            <label for="assignment">ASSIGNMENTS</label>
-                        </button>
-                    </div>
-                    <div>
-                        <div class="filter-search mr-1">
-                            <i class="fas fa-search"></i>
-                            <input class="h-search" type="text" placeholder="Search">
-                        </div>
-                    </div>
-                </div>
-                <div class="filter-section d-flex reporter-header-third">
-                    <!-- <div class="row"> -->
-                        <!-- <div class="col-md-3"> -->
-                            <div class="d-flex flex-start">
-                                <h6 class="mr-1">12 Users Found</h6>
-                                <div class="clear-filters">
-                                    <span>Clear Filters</span>
-                                    <i class="fas fa-times"></i>
-                                </div>
-                            </div>
-                        <!-- </div> -->
-                        <!-- <div class="col-md-9"> -->
-                            <div class="h-flex right-filter">
-                                <div class="filter-search allnews mr-1">
-                                    <i class="fas fa-users"></i>
-                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="Reporter’s Group" />
-                                    <i class="fas fa-chevron-down"></i>
-                                    <datalist id="All_news">
-                                        <option value="Chrome">
-                                        <option value="Firefox">
-                                        <option value="Internet Explorer">
-                                        <option value="Opera">
-                                        <option value="Safari">
-                                        <option value="Microsoft Edge">
-                                    </datalist>
-                                </div>
-                                <div class="filter-search allnews mr-1">
-                                    <i class="fas fa-sort-amount-down-alt"></i>
-                                    <input class="h-search" list="All_news" name="myBrowser" placeholder="Duty Status" />
-                                    <i class="fas fa-chevron-down"></i>
-                                    <datalist id="All_news">
-                                        <option value="Chrome">
-                                        <option value="Firefox">
-                                        <option value="Internet Explorer">
-                                        <option value="Opera">
-                                        <option value="Safari">
-                                        <option value="Microsoft Edge">
-                                    </datalist>
-                                </div>
-                            </div>
-                        <!-- </div> -->
-                    <!-- </div> -->
                 </div>
             </div>
-            <div class="after-dashboard user-data-page">
-                
-                <div class="h-map">
-                    <h1>Map Section</h1>
+            <div class="after-dashboard">
+                <div class="i-table table-3">
+                    <table>
+                        <thead>
+                            <tr align="left">
+                                <th>Key Description</th>
+                                <th>Value</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>join_whatsapp_group_link</td>
+                                <td>https://chat.whatsapp.com/BEGsdsdwejndks</td>
+                                <td class="text-blue">Edit</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="table-form" placeholder="News Heading"></td>
+                                <td><input type="text" class="table-form" placeholder="https://chat.whatsapp.com/BEGsdsdwejndks"></td>
+                                <td class="table-form-btn">
+                                    <button type="button" class="btn btn-primary"><i class="far fa-save"></i> Save</button>
+                                    <button type="button" class="btn btn-white"><i class="fas fa-times"></i> Cancel</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>join_whatsapp_group_link</td>
+                                <td>https://chat.whatsapp.com/BEGsdsdwejndks</td>
+                                <td class="text-blue">Edit</td>
+                            </tr>
+                            <tr>
+                                <td>join_whatsapp_group_link</td>
+                                <td>https://chat.whatsapp.com/BEGsdsdwejndks</td>
+                                <td class="text-blue">Edit</td>
+                            </tr>
+                            <tr>
+                                <td>join_whatsapp_group_link</td>
+                                <td>https://chat.whatsapp.com/BEGsdsdwejndks</td>
+                                <td class="text-blue">Edit</td>
+                            </tr>
+                            <tr>
+                                <td>join_whatsapp_group_link</td>
+                                <td>https://chat.whatsapp.com/BEGsdsdwejndks</td>
+                                <td class="text-blue">Edit</td>
+                            </tr>
+                            <tr>
+                                <td>join_whatsapp_group_link</td>
+                                <td>https://chat.whatsapp.com/BEGsdsdwejndks</td>
+                                <td class="text-blue">Edit</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -285,4 +270,5 @@
     <script src="file/js/lightslider.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

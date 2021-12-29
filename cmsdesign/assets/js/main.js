@@ -5,8 +5,6 @@ $(document).ready(function(){
       $(this).find(".dropdown-menu").slideToggle("fast");
   });
 
-
-
   var alterClass = function() {
     var ww = document.body.clientWidth;
     if (ww > 991) {
@@ -25,6 +23,15 @@ $(document).ready(function(){
     $('.h-down-arrow').css('transform','rotate(90deg)');
   });
 
+  // Tabs start
+  $(function(){
+    $('.tabsingle').click(function(){
+    $('.targetdiv').hide();
+    $('#div'+$(this).attr('target')).show();
+    $('.tabsingle').removeClass('tab-active');
+    $(this).addClass("tab-active");
+    });
+  });
   // tooltip start
   tippy('[data-tippy-content]',{
     animation: 'fade',
