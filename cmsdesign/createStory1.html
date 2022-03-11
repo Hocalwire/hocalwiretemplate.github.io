@@ -19,131 +19,160 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/boostrap-light.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        
+    </style>
 </head>
 
 <body>
     <!-- sidebar start -->
     <div class="sidebar">
-        <!-- <div> -->
         <div class="logo-details">
             <div class="logo_name">
                 <img class="logo full-logo" src="assets/images/black_logo.png" alt="Hocalwire">
                 <img class="logo short-logo" src="assets/images/avatar.jpeg" alt="Hocalwire">
             </div>
-            <div class="sidebar-bars">
-                <i class="fas fa-bars" id="btn"></i>
+            <div class="sidebar-bars" id="btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
         <div class="sidebar-menu">
             <ul class="nav-list">
-                <li data-tippy-content="Dashboard" class="active dropdown">
-                    <a href="#">
-                        <i class="fas fa-border-all"></i>
+                <li>
+                    <a href="#" data-tippy-content="Dashboard">
+                        <i class="fas fa-border-all menubar-icon"></i>
                         <span class="links_name">Dashboard</span>
                     </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item">option 1</li>
-                        <li class="dropdown-item">option 2</li>
-                        <li class="dropdown-item">option 3</li>
-                        <li class="dropdown-item">option 4</li>
-                    </ul>
                 </li>
-                <li data-tippy-content="Subscribers">
-                    <a href="#">
-                        <i class="fas fa-user-friends"></i>
+                <li>
+                    <a href="#" data-tippy-content="Subscribers">
+                        <i class="fas fa-user-friends menubar-icon"></i>
                         <span class="links_name">Subscribers</span>
                     </a>
                 </li>
-                <li data-tippy-content="Planning" class="dropdown">
-                    <a href="#">
-                        <i class="fas fa-clipboard-list"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Planning">
+                        <i class="fas fa-clipboard-list menubar-icon"></i>
                         <span class="links_name">Planning</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
-                    <i class="fas fa-chevron-right h-down-arrow"></i>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item"><a href="#">Option 1</a></li>
-                        <li class="dropdown-item"><a href="#">option 2</a></li>
-                        <li class="dropdown-item"><a href="#">option 3</a></li>
-                        <li class="dropdown-item"><a href="#">option 4</a></li>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="Map View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="Map View">List View</a></li>
                     </ul>
                 </li>
-                <li data-tippy-content="Reporters">
-                    <a href="#">
-                        <i class="fas fa-microphone"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Reporters">
+                        <i class="fas fa-microphone menubar-icon"></i>
                         <span class="links_name">Reporters</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="Map View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="News Room">
-                    <a href="#">
-                        <i class="fas fa-receipt"></i>
+                <li>
+                    <a href="#" data-tippy-content="News Room">
+                        <i class="fas fa-receipt menubar-icon"></i>
                         <span class="links_name">News Room</span>
                     </a>
                 </li>
-                <li data-tippy-content="Live Room">
-                    <a href="#">
-                        <i class="fas fa-play"></i>
+                <li>
+                    <a href="#" data-tippy-content="Live Room">
+                        <i class="fas fa-play menubar-icon"></i>
                         <span class="links_name">Live Room</span>
                     </a>
                 </li>
-                <li data-tippy-content="Buzz">
-                    <a href="#">
-                        <i class="fas fa-bolt"></i>
+                <li>
+                    <a href="#" data-tippy-content="Buzz">
+                        <i class="fas fa-bolt menubar-icon"></i>
                         <span class="links_name">Buzz</span>
                     </a>
                 </li>
-                <li data-tippy-content="Stories">
-                    <a href="story.html">
-                        <i class="fas fa-book-open"></i>
+                <li>
+                    <a href="story.html" class="active" data-tippy-content="Stories">
+                        <i class="fas fa-book-open menubar-icon"></i>
                         <span class="links_name">Stories</span>
                     </a>
                 </li>
-                <li data-tippy-content="News">
-                    <a href="#">
-                        <i class="fas fa-file-alt"></i>
+                <li>
+                    <a href="#" data-tippy-content="News">
+                        <i class="fas fa-file-alt menubar-icon"></i>
                         <span class="links_name">News</span>
                     </a>
                 </li>
-                <li data-tippy-content="AMP Stories">
-                    <a href="#">
-                        <i class="fas fa-bolt"></i>
+                <li>
+                    <a href="#" data-tippy-content="AMP Stories">
+                        <i class="fas fa-bolt menubar-icon"></i>
                         <span class="links_name">AMP Stories</span>
                     </a>
                 </li>
-                <li data-tippy-content="News Bulletin">
-                    <a href="#">
-                        <i class="fas fa-globe"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="News Bulletin">
+                        <i class="fas fa-globe menubar-icon"></i>
                         <span class="links_name">News Bulletin</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Videofy">
-                    <a href="#">
-                        <i class="fas fa-video"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Videofy">
+                        <i class="fas fa-video menubar-icon"></i>
                         <span class="links_name">Videofy</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Social">
-                    <a href="#">
-                        <i class="fab fa-telegram-plane"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Social">
+                        <i class="fab fa-telegram-plane menubar-icon"></i>
                         <span class="links_name">Social</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Subscriptions">
-                    <a href="#">
-                        <i class="far fa-envelope"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Subscriptions">
+                        <i class="far fa-envelope menubar-icon"></i>
                         <span class="links_name">Subscriptions</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Content Management">
-                    <a href="#">
-                        <i class="fas fa-indent"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Content Management">
+                        <i class="fas fa-indent menubar-icon"></i>
                         <span class="links_name">Content Management</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="System Management">
-                    <a href="#">
-                        <i class="fas fa-indent"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="System Management">
+                        <i class="fas fa-indent menubar-icon"></i>
                         <span class="links_name">System Management</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="Map View"></a></li>
+                        <li><a href="#" data-tippy-content="List View"></a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -153,13 +182,13 @@
                 <img class="poweredby-img" src="assets/images/black_logo.png">
             </div>
         </div>
-        <!-- </div> -->
     </div>
     <!-- sidebar end -->
+    
     <!-- main content start -->
     <section class="home-section">
         <div class="main-content">
-            <div class="d-flex flex-wrap top-header">
+            <div class="flex-wrap top-header">
                 <div class="top-header-left">
                     <form class="top-header-search">
                         <button class="top-header-btn" type="submit"><i class="fas fa-search"></i></button>
@@ -167,11 +196,7 @@
                     </form>
                 </div>
                 <div class="top-header-right">
-                    <div class="right-profile flex-wrap">
-                        <div class="accent">
-                            <span class="color-light"></span>
-                            <span class="accent-name">Accent</span>
-                        </div>
+                    <div class="right-profile ">
                         <div class="h-notification">
                             <span class="fa-stack has-badge" data-count="1">
                                 <i class="fas fa-bell" aria-hidden="true"></i>
@@ -205,7 +230,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-sm-12 col-xs-12">
                             <div class="dashboard-section">
-                                <h4 class="Header-name"><i class="fas fa-arrow-left"></i> Create New Story</h4>
+                                <h4 class="Header-name">Story # 1 <span>|</span> Title Of Story <span>|</span> In Review</h4>
                                 <p class="header-content">All the latest updates an stats can be monitored here!</p>
                             </div>
                         </div>
@@ -214,11 +239,12 @@
                                 <div class="">
                                     <button type="button" class="btn btn-white"><i class="fas fa-plus"></i> Publish
                                         Now</button>
-                                    <button type="button" class="btn"><i class="fab fa-telegram-plane"></i> Submit for
+                                    <button type="button" class="btn mr-0 mr-sm-1"><i class="fab fa-telegram-plane"></i> Submit for
                                         Review</button>
                                 </div>
+                                <div class="h-line">|</div>
                                 <div class="">
-                                    <button data-tippy-content="View" type="button" class="btn only-icon-btn"><i
+                                    <button data-tippy-content="Preview" type="button" class="btn only-icon-btn"><i
                                             class="fas fa-eye"></i></button>
                                     <button data-tippy-content="Save" type="button" class="btn only-icon-btn"><i
                                             class="far fa-save"></i></button>
@@ -231,126 +257,141 @@
                 </div>
             </div>
             <div class="after-dashboard">
-                <div class="create-story-section-one">
-                    <div class="d-flex main-progress-bar">
-                        <div class="d-flex story-progress-bar">
-                            <div class="progress-number">1</div>
-                            <span class="progress-content">Basic Details</span>
-                        </div>
-                        <div>
-                            <span>............</span>
-                        </div>
-                        <div class="d-flex story-progress-bar">
-                            <div class="progress-number">2</div>
-                            <span class="progress-content">Images & Media</span>
-                        </div>
-                        <div>
-                            <span>............</span>
-                        </div>
-                        <div class="d-flex story-progress-bar">
-                            <div class="progress-number">3</div>
-                            <span class="progress-content">News Editor</span>
-                        </div>
-                        <div>
-                            <span>............</span>
-                        </div>
-                        <div class="d-flex story-progress-bar">
-                            <div class="progress-number">4</div>
-                            <span class="progress-content">Social Share</span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="create-story-section-one">
-                    <h6 class="form-heading">Basic Details</h6>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label>News Heading</label><br>
-                                <input type="text" class="form-control" placeholder="News Heading">
+                <div class="section-two">
+                    <div class="progress-bar-section">
+                        <div class="main-progress-bar">
+                            <div class="d-flex story-progress-bar">
+                                <div class="progress-number">1</div>
+                                <span class="progress-content">Basic Details</span>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>News URL</label><br>
-                                <input type="text" class="form-control" placeholder="News Heading">
+                            <div>
+                                <span>............</span>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Short Description / Highlight</label><br>
-                                <input type="text" class="form-control" placeholder="News Heading">
+                            <div class="d-flex story-progress-bar">
+                                <div class="progress-number">2</div>
+                                <span class="progress-content">Images & Media</span>
+                            </div>
+                            <div>
+                                <span>............</span>
+                            </div>
+                            <div class="d-flex story-progress-bar">
+                                <div class="progress-number">3</div>
+                                <span class="progress-content">News Editor</span>
+                            </div>
+                            <div>
+                                <span>............</span>
+                            </div>
+                            <div class="d-flex story-progress-bar">
+                                <div class="progress-number">4</div>
+                                <span class="progress-content">Social Share</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="create-story-section-one">
-                    <h6 class="form-heading">Location & Time</h6>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Location</label><br>
-                                <input type="text" class="form-control" placeholder="Select Location">
+                    <div class="create-story-section-one">
+                        <h6 class="form-heading">Basic Details</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>News Heading</label>
+                                    <div class="form-input-with-icon">
+                                        <input type="text" class="form-control" placeholder="News Heading">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>News TIme</label><br>
-                                <i class="fas fa-calendar form-left-icon"></i>
-                                <input type="text" class="form-control pl-2" placeholder="15/09/2021">
-                                <i class="fas fa-times form-right-icon"></i>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>News URL</label>
+                                    <div class="form-input-with-icon">
+                                        <input type="text" class="form-control" placeholder="News Heading">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Dummy</label><br>
-                                <i class="fas fa-calendar form-left-icon"></i>
-                                <input type="text" class="form-control pl-2" placeholder="15/09/2021">
-                                <i class="fas fa-times form-right-icon"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="create-story-section-one">
-                    <h6 class="form-heading">Authors & Reviewers</h6>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Author</label><br>
-                                <i class="fas fa-users form-left-icon"></i>
-                                <input type="text" class="form-control pl-2" list="author-list"
-                                    placeholder="Select Author">
-                                <datalist id="author-list">
-                                    <option value="Author">
-                                    <option value="Author 1">
-                                    <option value="Author 2">
-                                    <option value="Author 3">
-                                    <option value="Author 4">
-                                </datalist>
-                                <i class="fas fa-chevron-down form-right-icon"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Reviewer</label><br>
-                                <i class="fas fa-users form-left-icon"></i>
-                                <input type="text" class="form-control pl-2" list="reviewer-list"
-                                    placeholder="Reviewer">
-
-                                <i class="fas fa-chevron-down form-right-icon"></i>
-                                <datalist id="reviewer-list">
-                                    <option value="reviewer 1">
-                                    <option value="reviewer 2">
-                                    <option value="reviewer 3">
-                                    <option value="reviewer 4">
-                                    <option value="reviewer 5">
-                                </datalist>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Short Description / Highlight</label>
+                                    <div class="form-input-with-icon">
+                                        <input type="text" class="form-control" placeholder="News Heading">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="text-right">
-                    <a href="createStory2.html" class="btn btn-primary"><i class="fas fa-save"></i> Save and Continue</a>
+                    <div class="create-story-section-one">
+                        <h6 class="form-heading">Location & Time</h6>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Location</label>
+                                    <div class="form-input-with-icon">
+                                        <input type="text" class="form-control" placeholder="Select Location">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>News TIme</label><br>
+                                    <div class="form-input-with-icon">
+                                        <i class="fas fa-calendar form-left-icon"></i>
+                                        <input type="text" class="form-control form-control-with-icon" placeholder="15/09/2021">
+                                        <i class="fas fa-times form-right-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Dummy</label><br>
+                                    <div class="form-input-with-icon">
+                                        <i class="fas fa-calendar form-left-icon"></i>
+                                        <input type="text" class="form-control form-control-with-icon" placeholder="15/09/2021">
+                                        <i class="fas fa-times form-right-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-story-section-one">
+                        <h6 class="form-heading">Authors & Reviewers</h6>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Author</label>
+                                    <div class="form-input-with-icon">
+                                        <i class="fas fa-users form-left-icon"></i>
+                                        <input type="text" class="form-control form-control-with-icon" list="author-list"
+                                            placeholder="Select Author">
+                                        <datalist id="author-list">
+                                            <option value="Author">
+                                            <option value="Author 1">
+                                            <option value="Author 2">
+                                            <option value="Author 3">
+                                            <option value="Author 4">
+                                        </datalist>
+                                        <i class="fas fa-chevron-down form-right-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Reviewer</label>
+                                    <div class="form-input-with-icon">
+                                        <i class="fas fa-users form-left-icon"></i>
+                                        <input type="text" class="form-control form-control-with-icon" list="reviewer-list" placeholder="Reviewer">
+                                        <i class="fas fa-chevron-down form-right-icon"></i>
+                                        <datalist id="reviewer-list">
+                                            <option value="reviewer 1">
+                                            <option value="reviewer 2">
+                                            <option value="reviewer 3">
+                                            <option value="reviewer 4">
+                                            <option value="reviewer 5">
+                                        </datalist>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <a href="createStory2.html" class="btn btn-primary mr-0"><i class="fas fa-save"></i> Save and Continue</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -361,6 +402,25 @@
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="file/js/lightslider.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+    function myFunction() {
+        document.getElementById("dropdown-menu").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropdown')) {
+            var dropdowns = document.getElementsByClassName("dropdown-menu");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+        </script>
 </body>
 
 </html>

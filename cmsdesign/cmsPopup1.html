@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> CMS</title>
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- font-awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <!-- tooltip -->
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+        <!-- css  -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Light slider -->
+        <link rel="stylesheet" href="file/css/lightslider.css" />
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/boostrap-light.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- modal button -->
+    <button class="modal-open" data-modal="modal1">Alert</button>
+    <button class="modal-open" data-modal="modal2">Select from Gallery</button>
+    <button class="modal-open" data-modal="modal3">Smart Tools</button>
+
+     <!-- modal content 1-->
+     <div class="modal" id="modal1">
+        <div class="modal-content">
+            <div class="modal-header">Welcome to Hocalwire
+                <button class="icon modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="model-dec">
+                    <div class="like-text">Do you like this model?</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="link model-submit"> Sure!</button>
+                <button class="link modal-close"> No</button>
+            </div>
+        </div>
+    </div> 
+
+
+     <!-- modal content 2-->
+     <div class="modal select-gallery-model" id="modal2">
+        <div class="modal-content">
+            <div class="modal-header select-gallery-header">Select From Gallery
+                <button class="icon modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="select-gallery-desc">
+                    <div class="tab-inner">
+                        <div class="tab-heading">
+                            <div class="tabsingle br_left tab-active" target="7"> All images </div>
+                            <div class="tabsingle br_left" target="8"> Live Images </div>
+                            <div class="tabsingle br_left" target="9"> Videos </div>
+                            <div class="tabsingle br_left" target="10"> Overlay </div>
+                            <div class="tabsingle br_left" target="11"> Icons </div>
+                        </div>
+                    </div>
+                    <div class="bg-white tab-content-section">
+                        <div class="filter-section image-story-filter">
+                            <div class="d-flex flex-start left-filter">
+                                <h6 class="">7 Stories Found</h6>
+                                <div class="clear-filters">
+                                    <span>Clear Filters</span>
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="d-flex right-filter">
+                                <div class="filter-common mr-0">
+                                    <i class="fas fa-search"></i>
+                                    <input class="h-search" type="text" placeholder="Search">
+                                </div>
+                                <div class="h-line">|</div>
+                                <div class="h-time">
+                                    <div class="time-div left-time">
+                                        <span class="time-title ml-0">From</span>
+                                        <div class="from-time">
+                                            <i class="fas fa-sort-amount-down-alt"></i>
+                                            <input class="h-search" placeholder="2021-09-08">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="time-div right-time">
+                                        <span class="time-title"> To </span>
+                                        <div class="from-time">
+                                            <i class="fas fa-sort-amount-down-alt"></i>
+                                            <input class="h-search" placeholder="2021-09-08">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div7" class="targetdiv">
+                            <div>
+                                <div class="stories-found">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="load-more-btn">
+                                    <a class="btn loadMoreAnchor">Load More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div8" class="targetdiv" style="display:none;">
+                            <div>
+                                <div class="stories-found">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="load-more-btn">
+                                    <a class="btn loadMoreAnchor">Load More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div9" class="targetdiv" style="display:none;">
+                            <div>
+                                <div class="stories-found">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="load-more-btn">
+                                    <a class="btn loadMoreAnchor">Load More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div10" class="targetdiv" style="display:none;">
+                            <div>
+                                <div class="stories-found">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="load-more-btn">
+                                    <a class="btn loadMoreAnchor">Load More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div11" class="targetdiv" style="display:none;">
+                            <div>
+                                <div class="stories-found">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div> 
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img class="card-image-top" src="assets/images/articleimage.jpeg" alt="images">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-photoname">WhatsApp Image 2022-03-09 at 4.10.01 PM.jpeg </div>
+                                        </div>
+                                        <div class="button-wrapper">
+                                            <a class="btn btn_delete small_btn">Add</a>
+                                            <a class="btn btn_delete small_btn">Add &amp; Close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="load-more-btn">
+                                    <a class="btn loadMoreAnchor">Load More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="link model-submit"> Sure!</button>
+                <button class="link modal-close"> No</button>
+            </div>
+        </div>
+    </div> 
+
+
+    <!-- modal content 3-->
+    <div class="modal h-smart-tools" id="modal3">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="">
+                    <div class="tab-inner">
+                        <div class="tab-heading">
+                            <div class="tabsingle br_left tab-active" target="12"> <img src="assets/images/hocal.png"> </div>
+                            <div class="tabsingle br_left" target="13"> <i class="fab fa-twitter"></i> </div>
+                            <div class="tabsingle br_left" target="14"> <i class="fas fa-file-pdf"></i> </div>
+                            <div class="tabsingle br_left" target="15"> <i class="fab fa-html5"></i> </div>
+                            <div class="tabsingle br_left" target="16"> <i class="fas fa-file-alt"></i> </div>
+                            <div class="tabsingle br_left" target="17"> <i class="fab fa-google"></i> </div>
+                            <div class="tabsingle br_left" target="18"> <i class="fab fa-facebook"></i> </div>
+                            <div class="tabsingle br_left" target="19"> <i class="fas fa-film"></i> </div>
+                            <div class="tabsingle br_left" target="20"> <i class="fab fa-youtube"></i> </div>
+                            <div class="tabsingle br_left" target="21"> <i class="fas fa-chart-line"></i> </div>
+                            <div class="tabsingle br_left" target="22"> <i class="fas fa-border-all"></i> </div>
+                            <div class="tabsingle br_left" target="23"> <i class="fas fa-ellipsis-h"></i> </div>
+                        </div>
+                    <button class="icon modal-close">&times;</button>
+                    </div>
+                </div>
+                <!-- <button class="icon modal-close">&times;</button> -->
+            </div>
+            <div class="modal-body">
+                <div class="smart-tool-desc">
+                    <section id="div12" class="targetdiv smart-tool-section">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Hocalwire Article Search</div>
+                            <div class="smart-tool-inner-body">
+                                <div id="" class="">
+                                    <div class="smart-tool-input">
+                                        <input class="auto-complete-element" style="max-width: 70%;" value="Search" autocomplete="off">
+                                    </div>
+                                    <textarea class="smart-tool-textarea" rows="4" placeholder="Article Heading..." id="insert-article-heading"></textarea>
+                                    <textarea class="smart-tool-textarea" rows="4" placeholder="Article Link..." id="insert-article-link"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div13" class="targetdiv tweet-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Twitter Search</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input class="auto-complete-element-keywords" placeholder="search keywords or #tags">
+                                        <a class="btn" id="searchTweets" style="cursor: pointer;background: #3a98d9;margin-left: -4px;height: 40px;margin-bottom: 2px;width: 50px;"><i class="fas fa-search" style="margin-top: 5px;"></i></a>
+                                    </div>
+                                    <div class="col-sm-6" style="margin-top: 5px;">
+                                        <div class="twt-heading">Result Type:</div>
+                                        <select style="width: 50%;" id="search-type">
+                                            <option></option>
+                                            <option value="mixed">Mixed</option>
+                                            <option value="recent">Recent</option>
+                                            <option value="popular">Popular</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div14" class="targetdiv pdf-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Pdf Upload</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="row">
+                                    <div class="col-sm-12" style="display: inline-flex;">
+                                        <input class="pdf-file" type="file">
+                                        <a class="btn" style="color: #428bca;text-decoration: underline;cursor: pointer;">Upload</a>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <textarea rows="4" placeholder="paste embed code..." style="height:100px"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div15" class="targetdiv html-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Add Html</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <textarea rows="4" placeholder="paste embed code..." style="height:100px; max-width: 100%;"></textarea>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="h-flex pull-right">
+                                            <div class="is-mobile-embed checkbox-wrap">
+                                                <input type="checkbox">
+                                                <label for="is-audio">Mobile Only </label>
+                                            </div>
+                                            <div class="is-tab-embed checkbox-wrap">
+                                                <input type="checkbox">
+                                                <label for="is-audio">Tab Only </label>
+                                            </div>
+                                            <div class="is-desktop-embed checkbox-wrap">
+                                                <input type="checkbox">
+                                                <label for="is-audio">Desktop Only </label>
+                                            </div>
+                                            <div class="is-fb-embed checkbox-wrap">
+                                                <input type="checkbox">
+                                                <label for="is-audio">Facebook Embed </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div16" class="targetdiv formats-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Article Formates</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="row">
+                                    <div class="col-sm-12" style="margin-top: 5px;">
+                                        <div class="twt-heading">Result Type:</div>
+                                        <select style="width: 50%;" id="search-type">
+                                            <option></option>
+                                            <option value="mixed">Mixed</option>
+                                            <option value="recent">Recent</option>
+                                            <option value="popular">Popular</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div17" class="targetdiv google-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Google Search</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="row">
+                                    <div class="col-sm-12" style="margin-top: 5px;">
+                                        <div class="control google active" style="display: inline-flex;font-size: 15px;">
+                                            <div class="button-web" style="cursor: pointer;color: #3a98d9;">Web</div>
+                                            <div class="button-image" style="margin-left: 10px;cursor: pointer;">Images</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <input class="google-search-keyword" placeholder="search.." style="border-radius: 0px;">
+                                        <a class="btn btn-default" id="searchGoogle" style="margin-bottom: 2px;cursor: pointer;background: #3a98d9;margin-left: -1px;height: 42px;width: 50px;"><i class="fas fa-search" style="margin-top: 5px;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div18" class="targetdiv facebook-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Facebook Search</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group add-on" style="width: 100%;">
+                                            <input class="form-control" placeholder="Search..." type="text" style="border: 1px solid lightgray;height: 38px;">
+                                            <div class="btn-group" style="display: -webkit-box;">
+                                                <a class="btn face-btn" style="margin-left: 5px;width: 50px;"><i class="fas fa-search"></i></a>
+                                                <a class="btn face-btn">Posts</a>
+                                                <a class="btn face-btn">People</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fb-second-column">
+                                <div class="fb-heading">Add Facebook Embed Post/video</div>
+                                <div class="fb-second-textarea-section">
+                                    <textarea rows="4" placeholder="paste embed code..." style="height:100px;max-width: 700px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div19" class="targetdiv facebook-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Video</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="col-sm-6">Upload Video(*.mp4)
+                                            <input id="video-file" class="video-file" type="file">
+                                            <a id="upload-videofile-btn" style="color: #428bca;text-decoration: underline;cursor: pointer;float: left;">Upload</a>
+                                            <div class="h-flex pull-right">
+                                                <div class="is-audio-wrap checkbox-wrap">
+                                                    <input type="checkbox" id="is-audio"> 
+                                                    <label for="is-audio">Audio </label>
+                                                </div>
+                                                <div class="is-autoplay-wrap checkbox-wrap">
+                                                    <input type="checkbox" id="is-autoplay"> 
+                                                    <label for="is-autoplay"> Autoplay </label>
+                                                </div>
+                                                <div class="is-preload-wrap checkbox-wrap">
+                                                    <input type="checkbox" checked="" id="is-preload"> 
+                                                    <label for="is-preload"> Preload Video </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <textarea rows="4" placeholder="paste embed code..." id="insert-video-embed" style="height:100px"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div20" class="targetdiv tweet-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Youtube Search</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input class="auto-complete-element-keywords" placeholder="search keywords or #tags" style="height:38px;">
+                                        <a class="btn" id="searchTweets" style="cursor: pointer;background: #3a98d9;margin-left: -4px;height: 38px;margin-bottom: 2px;width: 50px;"><i class="fas fa-search" style="margin-top: 5px;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div21" class="targetdiv tweet-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Chart Search</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="table-responsive" style="height:350px;text-align:left;">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr class="table-header">
+                                                <th class="desktop tablet-l"></th>
+                                                <th class="desktop tablet-l">Id</th>
+                                                <th class="desktop tablet-l">Chart Type</th>
+                                                <th class="desktop tablet-l">Heading</th>
+                                                <th class="desktop tablet-l">Date Created</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div22" class="targetdiv tweet-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">Widget Search</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="table-responsive" style="height:350px;text-align:left;">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr class="table-header">
+                                                <th class="desktop tablet-l"></th>
+                                                <th class="desktop tablet-l">Id</th>
+                                                <th class="desktop tablet-l">Title</th>
+                                                <th class="desktop tablet-l">Date Created</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="div23" class="targetdiv tweet-tab-content" style="display:none;">
+                        <div class="smart-tool-">
+                            <div class="panel-heading">More</div>
+                            <div class="smart-tool-inner-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group add-on" style="width: 100%;">
+                                            <select id="element-select" style="border: 1px solid lightgray;height: 38px;">
+                                                <option value="-1"> Select A Choice </option>
+                                                <option value="photogallery">Photogallery</option>
+                                                <option value="authorquote">Author Content</option>
+                                                <option value="addBlur">Add Blur Left</option>
+                                                <option value="addBlurRight">Add Blur Right</option>
+                                                <option value="addAdWithoutBorder">Add Ad (300*300)</option>
+                                                <option value="addAdWithBorder">Add Ad (250*250) with border</option>
+                                            </select>
+                                            <div class="input-group-btn" style="display: -webkit-inline-box;">
+                                                <a class="btn" style="color: white;background: #3a98d9;width: 64px;height: 38px;margin-top: 0px;padding: 5px 0;">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="modal-footer">
+                        <a class="btn btn-red">Insert PDF Link</a>
+                        <a class="btn btn-red"> Insert Now</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div> 
+
+
+
+    <!-- main content end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="file/js/lightslider.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        //modal opening button
+        var modalBtns = document.querySelectorAll(".modal-open");
+        modalBtns.forEach(function(btn) {
+            btn.onclick = function(){
+                 var modal = btn.getAttribute("data-modal");
+                 document.getElementById(modal).style.display = "block";
+            };
+        });
+        // model closing button
+        var closeBtns = document.querySelectorAll(".modal-close");
+        closeBtns.forEach(function(btn){
+            btn.onclick = function(){
+                var modal = btn.closest('.modal').style.display = "none";
+            };
+        });
+        // on window close 
+        window.onclick = function(e){
+            if(e.target.className == 'modal'){
+                e.target.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

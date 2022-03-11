@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,129 +20,156 @@
     <link rel="stylesheet" href="assets/css/boostrap-light.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
     <!-- sidebar start -->
     <div class="sidebar">
-        <!-- <div> -->
         <div class="logo-details">
             <div class="logo_name">
                 <img class="logo full-logo" src="assets/images/black_logo.png" alt="Hocalwire">
                 <img class="logo short-logo" src="assets/images/avatar.jpeg" alt="Hocalwire">
             </div>
-            <div class="sidebar-bars">
-                <i class="fas fa-bars" id="btn"></i>
+            <div class="sidebar-bars" id="btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
         <div class="sidebar-menu">
             <ul class="nav-list">
-                <li data-tippy-content="Dashboard" class="active dropdown">
-                    <a href="#">
-                        <i class="fas fa-border-all"></i>
+                <li>
+                    <a href="#" data-tippy-content="Dashboard">
+                        <i class="fas fa-border-all menubar-icon"></i>
                         <span class="links_name">Dashboard</span>
                     </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item">option 1</li>
-                        <li class="dropdown-item">option 2</li>
-                        <li class="dropdown-item">option 3</li>
-                        <li class="dropdown-item">option 4</li>
-                    </ul>
                 </li>
-                <li data-tippy-content="Subscribers">
-                    <a href="#">
-                        <i class="fas fa-user-friends"></i>
+                <li>
+                    <a href="#" data-tippy-content="Subscribers">
+                        <i class="fas fa-user-friends menubar-icon"></i>
                         <span class="links_name">Subscribers</span>
                     </a>
                 </li>
-                <li data-tippy-content="Planning" class="dropdown">
-                    <a href="#">
-                        <i class="fas fa-clipboard-list"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Planning">
+                        <i class="fas fa-clipboard-list menubar-icon"></i>
                         <span class="links_name">Planning</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
-                    <i class="fas fa-chevron-right h-down-arrow"></i>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item"><a href="#">Option 1</a></li>
-                        <li class="dropdown-item"><a href="#">option 2</a></li>
-                        <li class="dropdown-item"><a href="#">option 3</a></li>
-                        <li class="dropdown-item"><a href="#">option 4</a></li>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="Map View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="Map View">List View</a></li>
                     </ul>
                 </li>
-                <li data-tippy-content="Reporters">
-                    <a href="#">
-                        <i class="fas fa-microphone"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Reporters">
+                        <i class="fas fa-microphone menubar-icon"></i>
                         <span class="links_name">Reporters</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="Map View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="News Room">
-                    <a href="#">
-                        <i class="fas fa-receipt"></i>
+                <li>
+                    <a href="#" data-tippy-content="News Room">
+                        <i class="fas fa-receipt menubar-icon"></i>
                         <span class="links_name">News Room</span>
                     </a>
                 </li>
-                <li data-tippy-content="Live Room">
-                    <a href="#">
-                        <i class="fas fa-play"></i>
+                <li>
+                    <a href="#" data-tippy-content="Live Room">
+                        <i class="fas fa-play menubar-icon"></i>
                         <span class="links_name">Live Room</span>
                     </a>
                 </li>
-                <li data-tippy-content="Buzz">
-                    <a href="#">
-                        <i class="fas fa-bolt"></i>
+                <li>
+                    <a href="#" data-tippy-content="Buzz">
+                        <i class="fas fa-bolt menubar-icon"></i>
                         <span class="links_name">Buzz</span>
                     </a>
                 </li>
-                <li data-tippy-content="Stories">
-                    <a href="story.html">
-                        <i class="fas fa-book-open"></i>
+                <li>
+                    <a href="story.html" class="active" data-tippy-content="Stories">
+                        <i class="fas fa-book-open menubar-icon"></i>
                         <span class="links_name">Stories</span>
                     </a>
                 </li>
-                <li data-tippy-content="News">
-                    <a href="#">
-                        <i class="fas fa-file-alt"></i>
+                <li>
+                    <a href="#" data-tippy-content="News">
+                        <i class="fas fa-file-alt menubar-icon"></i>
                         <span class="links_name">News</span>
                     </a>
                 </li>
-                <li data-tippy-content="AMP Stories">
-                    <a href="#">
-                        <i class="fas fa-bolt"></i>
+                <li>
+                    <a href="#" data-tippy-content="AMP Stories">
+                        <i class="fas fa-bolt menubar-icon"></i>
                         <span class="links_name">AMP Stories</span>
                     </a>
                 </li>
-                <li data-tippy-content="News Bulletin">
-                    <a href="#">
-                        <i class="fas fa-globe"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="News Bulletin">
+                        <i class="fas fa-globe menubar-icon"></i>
                         <span class="links_name">News Bulletin</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Videofy">
-                    <a href="#">
-                        <i class="fas fa-video"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Videofy">
+                        <i class="fas fa-video menubar-icon"></i>
                         <span class="links_name">Videofy</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Social">
-                    <a href="#">
-                        <i class="fab fa-telegram-plane"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Social">
+                        <i class="fab fa-telegram-plane menubar-icon"></i>
                         <span class="links_name">Social</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Subscriptions">
-                    <a href="#">
-                        <i class="far fa-envelope"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Subscriptions">
+                        <i class="far fa-envelope menubar-icon"></i>
                         <span class="links_name">Subscriptions</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Content Management">
-                    <a href="#">
-                        <i class="fas fa-indent"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Content Management">
+                        <i class="fas fa-indent menubar-icon"></i>
                         <span class="links_name">Content Management</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="System Management">
-                    <a href="#">
-                        <i class="fas fa-indent"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="System Management">
+                        <i class="fas fa-indent menubar-icon"></i>
                         <span class="links_name">System Management</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="Map View"></a></li>
+                        <li><a href="#" data-tippy-content="List View"></a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -151,13 +179,12 @@
                 <img class="poweredby-img" src="assets/images/black_logo.png">
             </div>
         </div>
-        <!-- </div> -->
     </div>
     <!-- sidebar end -->
     <!-- main content start -->
     <section class="home-section">
         <div class="main-content">
-            <div class="d-flex flex-wrap top-header">
+            <div class="flex-wrap top-header">
                 <div class="top-header-left">
                     <form class="top-header-search">
                         <button class="top-header-btn" type="submit"><i class="fas fa-search"></i></button>
@@ -165,11 +192,7 @@
                     </form>
                 </div>
                 <div class="top-header-right">
-                    <div class="right-profile flex-wrap">
-                        <div class="accent">
-                            <span class="color-light"></span>
-                            <span class="accent-name">Accent</span>
-                        </div>
+                    <div class="right-profile ">
                         <div class="h-notification">
                             <span class="fa-stack has-badge" data-count="1">
                                 <i class="fas fa-bell" aria-hidden="true"></i>
@@ -199,11 +222,12 @@
                 </div>
             </div>
             <div class="header">
-                <div class="header-first-section">
+                <div class="head-story">
                     <div class="row">
                         <div class="col-lg-6 col-sm-12 col-xs-12">
                             <div class="dashboard-section">
-                                <h4 class="Header-name"><i class="fas fa-arrow-left"></i> Create New Story</h4>
+                                <h4 class="Header-name">Story # 1 <span>|</span> Title
+                                    Of Story <span>|</span> In Review</h4>
                                 <p class="header-content">All the latest updates an stats can be monitored here!</p>
                             </div>
                         </div>
@@ -212,12 +236,17 @@
                                 <div class="">
                                     <button type="button" class="btn btn-white"><i class="fas fa-plus"></i> Publish
                                         Now</button>
-                                    <button type="button" class="btn"><i class="fab fa-telegram-plane"></i> Submit for Review</button>
+                                    <button type="button" class="btn mr-0 mr-sm-1"><i class="fab fa-telegram-plane"></i> Submit for
+                                        Review</button>
                                 </div>
+                                <div class="h-line">|</div>
                                 <div class="">
-                                    <button type="button" class="btn only-icon-btn"><i class="fas fa-eye"></i></button>
-                                    <button type="button" class="btn only-icon-btn"><i class="far fa-save"></i></button>
-                                    <button type="button" class="btn only-icon-btn"><i class="far fa-trash-alt"></i></button>
+                                    <button data-tippy-content="Preview" type="button" class="btn only-icon-btn"><i
+                                            class="fas fa-eye"></i></button>
+                                    <button data-tippy-content="Save" type="button" class="btn only-icon-btn"><i
+                                            class="far fa-save"></i></button>
+                                    <button data-tippy-content="Delete" type="button" class="btn only-icon-btn"><i
+                                            class="far fa-trash-alt"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -225,92 +254,96 @@
                 </div>
             </div>
             <div class="after-dashboard create-story-2">
-                <div class="create-story-section-one">
-                    <div class="d-flex main-progress-bar">
-                        <div class="d-flex story-progress-bar">
-                            <div class="progress-number">1</div>
-                            <span class="progress-content">Basic Details</span>
-                        </div>
-                        <div>
-                            <span>............</span>
-                        </div>
-                        <div class="d-flex story-progress-bar">
-                            <div class="progress-number">2</div>
-                            <span class="progress-content">Images & Media</span>
-                        </div>
-                        <div>
-                            <span>............</span>
-                        </div>
-                        <div class="d-flex story-progress-bar">
-                            <div class="progress-number">3</div>
-                            <span class="progress-content">News Editor</span>
-                        </div>
-                        <div>
-                            <span>............</span>
-                        </div>
-                        <div class="d-flex story-progress-bar">
-                            <div class="progress-number">4</div>
-                            <span class="progress-content">Social Share</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="create-story-section-one ">
-                    <h6 class="form-heading">Cover Images and Media</h6>
-                    <div class="d-flex editor-top">
-                        <div class="toggle-switch h-flex">
-                            <div class="main-toggle">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
-                                <span class="toggle-content">Watermark All Images</span>
+                <div class="section-two">
+                    <div class="progress-bar-section">
+                        <div class="d-flex main-progress-bar">
+                            <div class="d-flex story-progress-bar">
+                                <div class="progress-number">1</div>
+                                <span class="progress-content">Basic Details</span>
                             </div>
-                            <div class="main-toggle">
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round"></span>
-                                </label>
-                                <span class="toggle-content">Disable Image Compression</span>
+                            <div>
+                                <span>............</span>
+                            </div>
+                            <div class="d-flex story-progress-bar">
+                                <div class="progress-number">2</div>
+                                <span class="progress-content">Images & Media</span>
+                            </div>
+                            <div>
+                                <span>............</span>
+                            </div>
+                            <div class="d-flex story-progress-bar">
+                                <div class="progress-number">3</div>
+                                <span class="progress-content">News Editor</span>
+                            </div>
+                            <div>
+                                <span>............</span>
+                            </div>
+                            <div class="d-flex story-progress-bar">
+                                <div class="progress-number">4</div>
+                                <span class="progress-content">Social Share</span>
                             </div>
                         </div>
-                        <div class=""><button type="button" class="btn btn-skin"><i class="fas fa-language"></i> English <i class="fas fa-chevron-down"></i></button></div>
                     </div>
-                    <div class="text-editor">
-                        <div class="text-editor-icons">
-                            <button type="btn" class="editor-icon"><i class="fas fa-bold"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-italic"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-underline"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-strikethrough"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-font"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-paint-brush"></i></button>
-                            <button type="btn" class="editor-icon"><i class="far fa-smile"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-lira-sign"></i><i class="fas fa-sort-down"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-align-left"></i><i class="fas fa-sort-down"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-list-ol"></i><i class="fas fa-sort-down"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-list-ul"></i><i class="fas fa-sort-down"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-indent"></i><i class="fas fa-sort-down"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-indent"></i></button>
-                            <button type="btn" class="editor-icon disable"><i class="fas fa-indent"></i></button>
-                            <button type="btn" class="editor-icon"><i class="far fa-image"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-link"></i></button>
-                            <button type="btn" class="editor-icon"><i class="far fa-file"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-video"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-undo"></i></button>
-                            <button type="btn" class="editor-icon"><i class="fas fa-redo"></i></button>
+                    <div class="create-story-section-one ">
+                        <h6 class="form-heading">Story Editor</h6>
+                        <div class="d-flex editor-top">
+                            <div class="toggle-switch h-flex">
+                                <div class="main-toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toggle-content">Watermark All Images</span>
+                                </div>
+                                <div class="main-toggle">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toggle-content">Disable Image Compression</span>
+                                </div>
+                            </div>
+                            <div class=""><button type="button" class="btn btn-skin"><i class="fas fa-language"></i> English <i class="fas fa-chevron-down"></i></button></div>
                         </div>
-                        <div class="main-editor-text"></div>
-                        <div class="editor-bottom">
-                            <span class="editor-bottom-count">Character Count: 0</span>
-                            <span class="editor-bottom-count">Word Count: 1</span>
+                        <div class="text-editor">
+                            <div class="text-editor-icons">
+                                <button type="btn" class="editor-icon"><i class="fas fa-bold"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-italic"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-underline"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-strikethrough"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-font"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-paint-brush"></i></button>
+                                <button type="btn" class="editor-icon"><i class="far fa-smile"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-lira-sign"></i><i class="fas fa-sort-down"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-align-left"></i><i class="fas fa-sort-down"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-list-ol"></i><i class="fas fa-sort-down"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-list-ul"></i><i class="fas fa-sort-down"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-indent"></i><i class="fas fa-sort-down"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-indent"></i></button>
+                                <button type="btn" class="editor-icon disable"><i class="fas fa-indent"></i></button>
+                                <button type="btn" class="editor-icon"><i class="far fa-image"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-link"></i></button>
+                                <button type="btn" class="editor-icon"><i class="far fa-file"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-video"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-undo"></i></button>
+                                <button type="btn" class="editor-icon"><i class="fas fa-redo"></i></button>
+                            </div>
+                            <div class="main-editor-text"></div>
+                            <div class="editor-bottom">
+                                <span class="editor-bottom-count">Character Count: 0</span>
+                                <span class="editor-bottom-count">Word Count: 1</span>
+                            </div>
+                        </div>
+                        <div class="btn-section">
+                            <button type="button" class="btn btn-skyblue editor-upload-btn"><i class="fas fa-plus"></i>
+                                Upload Image</button>
                         </div>
                     </div>
-                    <div class="btn-section">
-                        <button type="button" class="btn btn-skyblue editor-upload-btn"><i class="fas fa-plus"></i> Upload Image</button>
+    
+                    <div class="text-right">
+                        <a href="createStory4.html" class="btn btn-primary"><i class="fas fa-save"></i> Save and
+                            Continue</a>
                     </div>
-                </div>
-                
-                <div class="text-right">
-                    <a href="createStory4.html" class="btn btn-primary"><i class="fas fa-save"></i> Save and Continue</a>
                 </div>
             </div>
         </div>
@@ -322,4 +355,5 @@
     <script src="file/js/lightslider.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

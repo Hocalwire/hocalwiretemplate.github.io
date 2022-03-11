@@ -22,126 +22,152 @@
 <body>
     <!-- sidebar start -->
     <div class="sidebar">
-        <!-- <div> -->
         <div class="logo-details">
             <div class="logo_name">
                 <img class="logo full-logo" src="assets/images/black_logo.png" alt="Hocalwire">
                 <img class="logo short-logo" src="assets/images/avatar.jpeg" alt="Hocalwire">
             </div>
-            <div class="sidebar-bars">
-                <i class="fas fa-bars" id="btn"></i>
+            <div class="sidebar-bars" id="btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
         <div class="sidebar-menu">
             <ul class="nav-list">
-                <li data-tippy-content="Dashboard" class="active dropdown">
-                    <a href="#">
-                        <i class="fas fa-border-all"></i>
+                <li>
+                    <a href="dashboard.html" class="active" data-tippy-content="Dashboard">
+                        <i class="fas fa-border-all menubar-icon"></i>
                         <span class="links_name">Dashboard</span>
                     </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item">option 1</li>
-                        <li class="dropdown-item">option 2</li>
-                        <li class="dropdown-item">option 3</li>
-                        <li class="dropdown-item">option 4</li>
-                    </ul>
                 </li>
-                <li data-tippy-content="Subscribers">
-                    <a href="#">
-                        <i class="fas fa-user-friends"></i>
+                <li>
+                    <a href="#" data-tippy-content="Subscribers">
+                        <i class="fas fa-user-friends menubar-icon"></i>
                         <span class="links_name">Subscribers</span>
                     </a>
                 </li>
-                <li data-tippy-content="Planning" class="dropdown">
-                    <a href="#">
-                        <i class="fas fa-clipboard-list"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Planning">
+                        <i class="fas fa-clipboard-list menubar-icon"></i>
                         <span class="links_name">Planning</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
-                    <i class="fas fa-chevron-right h-down-arrow"></i>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item"><a href="#">Option 1</a></li>
-                        <li class="dropdown-item"><a href="#">option 2</a></li>
-                        <li class="dropdown-item"><a href="#">option 3</a></li>
-                        <li class="dropdown-item"><a href="#">option 4</a></li>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="Map View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="Map View">List View</a></li>
                     </ul>
                 </li>
-                <li data-tippy-content="Reporters">
-                    <a href="#">
-                        <i class="fas fa-microphone"></i>
+                <li>
+                    <a href="reporterAssignment.html" class="sidebar_accordion" data-tippy-content="Reporters">
+                        <i class="fas fa-microphone menubar-icon"></i>
                         <span class="links_name">Reporters</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="Map View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="News Room">
-                    <a href="#">
-                        <i class="fas fa-receipt"></i>
+                <li>
+                    <a href="newsRoom.html" data-tippy-content="News Room">
+                        <i class="fas fa-receipt menubar-icon"></i>
                         <span class="links_name">News Room</span>
                     </a>
                 </li>
-                <li data-tippy-content="Live Room">
-                    <a href="#">
-                        <i class="fas fa-play"></i>
+                <li>
+                    <a href="#" data-tippy-content="Live Room">
+                        <i class="fas fa-play menubar-icon"></i>
                         <span class="links_name">Live Room</span>
                     </a>
                 </li>
-                <li data-tippy-content="Buzz">
-                    <a href="#">
-                        <i class="fas fa-bolt"></i>
+                <li>
+                    <a href="#" data-tippy-content="Buzz">
+                        <i class="fas fa-bolt menubar-icon"></i>
                         <span class="links_name">Buzz</span>
                     </a>
                 </li>
-                <li data-tippy-content="Stories">
-                    <a href="story.html">
-                        <i class="fas fa-book-open"></i>
+                <li>
+                    <a href="story.html" data-tippy-content="Stories">
+                        <i class="fas fa-book-open menubar-icon"></i>
                         <span class="links_name">Stories</span>
                     </a>
                 </li>
-                <li data-tippy-content="News">
-                    <a href="#">
-                        <i class="fas fa-file-alt"></i>
+                <li>
+                    <a href="#" data-tippy-content="News">
+                        <i class="fas fa-file-alt menubar-icon"></i>
                         <span class="links_name">News</span>
                     </a>
                 </li>
-                <li data-tippy-content="AMP Stories">
-                    <a href="#">
-                        <i class="fas fa-bolt"></i>
+                <li>
+                    <a href="#" data-tippy-content="AMP Stories">
+                        <i class="fas fa-bolt menubar-icon"></i>
                         <span class="links_name">AMP Stories</span>
                     </a>
                 </li>
-                <li data-tippy-content="News Bulletin">
-                    <a href="#">
-                        <i class="fas fa-globe"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="News Bulletin">
+                        <i class="fas fa-globe menubar-icon"></i>
                         <span class="links_name">News Bulletin</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Videofy">
-                    <a href="#">
-                        <i class="fas fa-video"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Videofy">
+                        <i class="fas fa-video menubar-icon"></i>
                         <span class="links_name">Videofy</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Social">
-                    <a href="#">
-                        <i class="fab fa-telegram-plane"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Social">
+                        <i class="fab fa-telegram-plane menubar-icon"></i>
                         <span class="links_name">Social</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Subscriptions">
-                    <a href="#">
-                        <i class="far fa-envelope"></i>
+                <li>
+                    <a href="Subscription.html" class="sidebar_accordion" data-tippy-content="Subscriptions">
+                        <i class="far fa-envelope menubar-icon"></i>
                         <span class="links_name">Subscriptions</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Content Management">
-                    <a href="#">
-                        <i class="fas fa-indent"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Content Management">
+                        <i class="fas fa-indent menubar-icon"></i>
                         <span class="links_name">Content Management</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="System Management">
-                    <a href="#">
-                        <i class="fas fa-indent"></i>
+                <li>
+                    <a href="systemManagment.html" class="sidebar_accordion" data-tippy-content="System Management">
+                        <i class="fas fa-indent menubar-icon"></i>
                         <span class="links_name">System Management</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="Map View"></a></li>
+                        <li><a href="#" data-tippy-content="List View"></a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -151,8 +177,8 @@
                 <img class="poweredby-img" src="assets/images/black_logo.png">
             </div>
         </div>
-        <!-- </div> -->
     </div>
+    
     <!-- sidebar end -->
     <!-- main content start -->
     <section class="home-section integration-page">
@@ -165,15 +191,11 @@
                       </form>
                 </div>
                 <div class="top-header-right">
-                    <div class="right-profile flex-wrap">
-                        <div class="accent">
-                            <span class="color-light"></span>
-                            <span class="accent-name">Accent</span>
-                        </div>
+                    <div class="right-profile ">
                         <div class="h-notification">
                             <span class="fa-stack has-badge" data-count="1">
                                 <i class="fas fa-bell" aria-hidden="true"></i>
-                              </span>
+                            </span>
                         </div>
                         <div class="profile dropdown">
                             <div class="h-avatar">
@@ -200,9 +222,12 @@
             </div>
             <div class="header">
                 <div class="d-flex reporter-header-first">
-                    <div class="dashboard-section">
-                        <h4 class="Header-name">Integrations</h4>
-                        <p class="header-content">All the latest updates an stats can be monitored here!</p>
+                    <div class="h-dashboard">
+                        <div class="dashboard-section">
+                            <h4 class="Header-name">Integrations</h4>
+                            <p class="header-content">All the latest updates an stats can be monitored here!</p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -210,7 +235,7 @@
                 <div class="section-one">
                     <div class="row">
                         <div class="col-lg-3 col-sm-6 col-xs-12">
-                            <div class="card">
+                            <div class="card integration-card">
                                 <div class="card-top">
                                     <div class="card-top-icon">
                                         <i class="far fa-envelope"></i>
@@ -218,7 +243,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex ">
-                                        <h6 class="text-primary">smtp.office365.com</h6>
+                                        <h6 class="text-primary i-email">smtp.office365.com</h6>
                                         <div class="card-icon bg-grey dropdown">
                                             <i class="fas fa-ellipsis-v"></i>
                                             <ul class="dropdown-menu">
@@ -235,7 +260,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 col-xs-12">
-                            <div class="card">
+                            <div class="card integration-card">
                                 <div class="card-top">
                                     <div class="card-top-icon">
                                         <i class="fab fa-telegram-plane"></i>
@@ -243,7 +268,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex ">
-                                        <h6 class="text-primary">smtp.office365.com</h6>
+                                        <h6 class="text-primary i-email">Mailchimp</h6>
                                         <div class="card-icon bg-grey dropdown">
                                             <i class="fas fa-ellipsis-v"></i>
                                             <ul class="dropdown-menu">
@@ -254,13 +279,13 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <h6 class="card-title">Email</h6>
+                                    <h6 class="card-title">News Letter</h6>
                                     <p class="text-muted">whistle@dailythanthi.com</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 col-xs-12">
-                            <div class="card">
+                            <div class="card integration-card">
                                 <div class="card-top">
                                     <div class="card-top-icon">
                                         <i class="fab fa-twitter"></i>
@@ -268,7 +293,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex ">
-                                        <h6 class="text-primary">smtp.office365.com</h6>
+                                        <h6 class="text-primary i-email">Twitter</h6>
                                         <div class="card-icon bg-grey dropdown">
                                             <i class="fas fa-ellipsis-v"></i>
                                             <ul class="dropdown-menu">
@@ -279,13 +304,13 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <h6 class="card-title">Email</h6>
+                                    <h6 class="card-title">Social Plugin</h6>
                                     <p class="text-muted">whistle@dailythanthi.com</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 col-xs-12">
-                            <div class="card">
+                            <div class="card integration-card">
                                 <div class="card-top">
                                     <div class="card-top-icon">
                                         <i class="fab fa-facebook-f"></i>
@@ -293,7 +318,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex ">
-                                        <h6 class="text-primary">smtp.office365.com</h6>
+                                        <h6 class="text-primary i-email">Facebook</h6>
                                         <div class="card-icon bg-grey dropdown">
                                             <i class="fas fa-ellipsis-v"></i>
                                             <ul class="dropdown-menu">
@@ -304,13 +329,13 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <h6 class="card-title">Email</h6>
+                                    <h6 class="card-title">Instant Article</h6>
                                     <p class="text-muted">whistle@dailythanthi.com</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 col-xs-12">
-                            <div class="card">
+                            <div class="card integration-card">
                                 <div class="card-top">
                                     <div class="card-top-icon">
                                         <i class="fas fa-bolt"></i>
@@ -318,7 +343,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex ">
-                                        <h6 class="text-primary">smtp.office365.com</h6>
+                                        <h6 class="text-primary i-email">Email</h6>
                                         <div class="card-icon bg-grey dropdown">
                                             <i class="fas fa-ellipsis-v"></i>
                                             <ul class="dropdown-menu">
@@ -329,13 +354,13 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <h6 class="card-title">Email</h6>
+                                    <h6 class="card-title">Web Push Notification</h6>
                                     <p class="text-muted">whistle@dailythanthi.com</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 col-xs-12">
-                            <div class="card">
+                            <div class="card integration-card">
                                 <div class="card-top">
                                     <div class="card-top-icon">
                                         <i class="far fa-bell"></i>
@@ -343,7 +368,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex ">
-                                        <h6 class="text-primary">smtp.office365.com</h6>
+                                        <h6 class="text-primary i-email">Email</h6>
                                         <div class="card-icon bg-grey dropdown">
                                             <i class="fas fa-ellipsis-v"></i>
                                             <ul class="dropdown-menu">
@@ -354,7 +379,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <h6 class="card-title">Email</h6>
+                                    <h6 class="card-title">App Notification</h6>
                                     <p class="text-muted">whistle@dailythanthi.com</p>
                                 </div>
                             </div>

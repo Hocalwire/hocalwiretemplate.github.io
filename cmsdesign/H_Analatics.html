@@ -22,126 +22,152 @@
 <body>
     <!-- sidebar start -->
     <div class="sidebar">
-        <!-- <div> -->
         <div class="logo-details">
             <div class="logo_name">
                 <img class="logo full-logo" src="assets/images/black_logo.png" alt="Hocalwire">
                 <img class="logo short-logo" src="assets/images/avatar.jpeg" alt="Hocalwire">
             </div>
-            <div class="sidebar-bars">
-                <i class="fas fa-bars" id="btn"></i>
+            <div class="sidebar-bars" id="btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
         <div class="sidebar-menu">
             <ul class="nav-list">
-                <li data-tippy-content="Dashboard" class="active dropdown">
-                    <a href="#">
-                        <i class="fas fa-border-all"></i>
+                <li>
+                    <a href="dashboard.html" class="active" data-tippy-content="Dashboard">
+                        <i class="fas fa-border-all menubar-icon"></i>
                         <span class="links_name">Dashboard</span>
                     </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item">option 1</li>
-                        <li class="dropdown-item">option 2</li>
-                        <li class="dropdown-item">option 3</li>
-                        <li class="dropdown-item">option 4</li>
-                    </ul>
                 </li>
-                <li data-tippy-content="Subscribers">
-                    <a href="#">
-                        <i class="fas fa-user-friends"></i>
+                <li>
+                    <a href="#" data-tippy-content="Subscribers">
+                        <i class="fas fa-user-friends menubar-icon"></i>
                         <span class="links_name">Subscribers</span>
                     </a>
                 </li>
-                <li data-tippy-content="Planning" class="dropdown">
-                    <a href="#">
-                        <i class="fas fa-clipboard-list"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Planning">
+                        <i class="fas fa-clipboard-list menubar-icon"></i>
                         <span class="links_name">Planning</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
-                    <i class="fas fa-chevron-right h-down-arrow"></i>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item"><a href="#">Option 1</a></li>
-                        <li class="dropdown-item"><a href="#">option 2</a></li>
-                        <li class="dropdown-item"><a href="#">option 3</a></li>
-                        <li class="dropdown-item"><a href="#">option 4</a></li>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="Map View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="Map View">List View</a></li>
                     </ul>
                 </li>
-                <li data-tippy-content="Reporters">
-                    <a href="#">
-                        <i class="fas fa-microphone"></i>
+                <li>
+                    <a href="reporterAssignment.html" class="sidebar_accordion" data-tippy-content="Reporters">
+                        <i class="fas fa-microphone menubar-icon"></i>
                         <span class="links_name">Reporters</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="Map View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="News Room">
-                    <a href="#">
-                        <i class="fas fa-receipt"></i>
+                <li>
+                    <a href="newsRoom.html" data-tippy-content="News Room">
+                        <i class="fas fa-receipt menubar-icon"></i>
                         <span class="links_name">News Room</span>
                     </a>
                 </li>
-                <li data-tippy-content="Live Room">
-                    <a href="#">
-                        <i class="fas fa-play"></i>
+                <li>
+                    <a href="#" data-tippy-content="Live Room">
+                        <i class="fas fa-play menubar-icon"></i>
                         <span class="links_name">Live Room</span>
                     </a>
                 </li>
-                <li data-tippy-content="Buzz">
-                    <a href="#">
-                        <i class="fas fa-bolt"></i>
+                <li>
+                    <a href="#" data-tippy-content="Buzz">
+                        <i class="fas fa-bolt menubar-icon"></i>
                         <span class="links_name">Buzz</span>
                     </a>
                 </li>
-                <li data-tippy-content="Stories">
-                    <a href="story.html">
-                        <i class="fas fa-book-open"></i>
+                <li>
+                    <a href="story.html" data-tippy-content="Stories">
+                        <i class="fas fa-book-open menubar-icon"></i>
                         <span class="links_name">Stories</span>
                     </a>
                 </li>
-                <li data-tippy-content="News">
-                    <a href="#">
-                        <i class="fas fa-file-alt"></i>
+                <li>
+                    <a href="#" data-tippy-content="News">
+                        <i class="fas fa-file-alt menubar-icon"></i>
                         <span class="links_name">News</span>
                     </a>
                 </li>
-                <li data-tippy-content="AMP Stories">
-                    <a href="#">
-                        <i class="fas fa-bolt"></i>
+                <li>
+                    <a href="#" data-tippy-content="AMP Stories">
+                        <i class="fas fa-bolt menubar-icon"></i>
                         <span class="links_name">AMP Stories</span>
                     </a>
                 </li>
-                <li data-tippy-content="News Bulletin">
-                    <a href="#">
-                        <i class="fas fa-globe"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="News Bulletin">
+                        <i class="fas fa-globe menubar-icon"></i>
                         <span class="links_name">News Bulletin</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Videofy">
-                    <a href="#">
-                        <i class="fas fa-video"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Videofy">
+                        <i class="fas fa-video menubar-icon"></i>
                         <span class="links_name">Videofy</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Social">
-                    <a href="#">
-                        <i class="fab fa-telegram-plane"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Social">
+                        <i class="fab fa-telegram-plane menubar-icon"></i>
                         <span class="links_name">Social</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li ><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Subscriptions">
-                    <a href="#">
-                        <i class="far fa-envelope"></i>
+                <li>
+                    <a href="Subscription.html" class="sidebar_accordion" data-tippy-content="Subscriptions">
+                        <i class="far fa-envelope menubar-icon"></i>
                         <span class="links_name">Subscriptions</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="Content Management">
-                    <a href="#">
-                        <i class="fas fa-indent"></i>
+                <li>
+                    <a href="#" class="sidebar_accordion" data-tippy-content="Content Management">
+                        <i class="fas fa-indent menubar-icon"></i>
                         <span class="links_name">Content Management</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="List View">Map View</a></li>
+                        <li><a href="#" data-tippy-content="List View">List View</a></li>
+                    </ul>
                 </li>
-                <li data-tippy-content="System Management">
-                    <a href="#">
-                        <i class="fas fa-indent"></i>
+                <li>
+                    <a href="systemManagment.html" class="sidebar_accordion" data-tippy-content="System Management">
+                        <i class="fas fa-indent menubar-icon"></i>
                         <span class="links_name">System Management</span>
+                        <i class="fas fa-chevron-right h-down-arrow"></i>
                     </a>
+                    <ul class="sidebar_dropdown">
+                        <li><a href="#" data-tippy-content="Map View"></a></li>
+                        <li><a href="#" data-tippy-content="List View"></a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -151,11 +177,10 @@
                 <img class="poweredby-img" src="assets/images/black_logo.png">
             </div>
         </div>
-        <!-- </div> -->
     </div>
     <!-- sidebar end -->
     <!-- main content start -->
-    <section class="home-section">
+    <section class="home-section h-analytics">
         <div class="main-content">
             <div class="d-flex flex-wrap top-header">
                 <div class="top-header-left">
@@ -165,15 +190,11 @@
                       </form>
                 </div>
                 <div class="top-header-right">
-                    <div class="right-profile flex-wrap">
-                        <div class="accent">
-                            <span class="color-light"></span>
-                            <span class="accent-name">Accent</span>
-                        </div>
+                    <div class="right-profile ">
                         <div class="h-notification">
                             <span class="fa-stack has-badge" data-count="1">
                                 <i class="fas fa-bell" aria-hidden="true"></i>
-                              </span>
+                            </span>
                         </div>
                         <div class="profile dropdown">
                             <div class="h-avatar">
@@ -208,95 +229,208 @@
                         <button type="button" class="btn btn-white"><i class="fas fa-plus"></i> Add New Reporter</button>
                     </div>
                 </div>
-                <div class="d-flex my-2 heading-two analytics-header-second">
-                    <div class="d-flex right-filter">
-                        <div class="h-time">
-                            <div class="h-flex">
-                                <span class="mr-1">From</span>
-                                <div class="filter-search allnews mr-1">
-                                    <i class="far fa-calendar"></i>
-                                    <input class="h-search" placeholder="2021-09-08">
-                                    <i class="fas fa-times"></i>
-                                </div>
-                            </div>
-                            <div class="h-flex">
-                                <span class="mr-1"> To </span>
-                                <div class="filter-search allnews mr-1">
-                                    <i class="far fa-calendar"></i>
-                                    <input class="h-search" placeholder="2021-09-08">
-                                    <i class="fas fa-times"></i>
-                                </div>
-                            </div>
-                        <div class="h-line">|</div>
-                        <div>Feed State</div>
-                        <div class="filter-search ml-1">
-                            <input class="h-search" type="text" placeholder="Accepted">
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn"><i class="fas fa-sync"></i> Reset Filter</button>
-                    </div>
-                </div>
             </div>
-            <div class="after-dashboard user-data-page">
-                <div class="create-story-section-one section-one">
-                    <div class="">
-                        <h6 class="form-heading">Basic Details</h6>
-                    </div>
-                    <div>
-                        <div class="row">
-                            <div class="col-50-per">
-                                <span>User Id</span>
-                                <h6 class="form-heading">21131</h6>
+            <div class="after-dashboard ">
+                <div class="filter-section">
+                    <div class="d-flex flex-start left-filter">
+                        <div class="h-time">
+                            <div class="time-div left-time">
+                                <span class="time-title ml-0">From</span>
+                                <div class="from-time">
+                                    <i class="fas fa-sort-amount-down-alt"></i>
+                                    <input class="h-search" placeholder="2021-09-08">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
                             </div>
-                            <div class="col-50-per">
-                                <span>Email</span>
-                                <h6 class="form-heading">kumar.dtckm@gmail.com</h6>
+                            <div class="time-div right-time">
+                                <span class="time-title"> To </span>
+                                <div class="from-time">
+                                    <i class="fas fa-sort-amount-down-alt"></i>
+                                    <input class="h-search" placeholder="2021-09-08">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
                             </div>
-                            <div class="col-50-per">
-                                <span>Total Stories</span>
-                                <h6 class="form-heading">44</h6>
-                            </div>
-                            <div class="col-50-per">
-                                <span>Total Stories</span>
-                                <h6 class="form-heading">44</h6>
-                            </div>
-                            <div class="col-50-per">
-                                <span>In-Progress</span>
-                                <h6 class="form-heading">44</h6>
-                            </div>
-                            <div class="col-50-per">
-                                <span>User Id</span>
-                                <h6 class="form-heading">K. Kumar</h6>
-                            </div>
-                            <div class="col-50-per">
-                                <span>Phone No</span>
-                                <h6 class="form-heading">8277582434</h6>
-                            </div>
-                            <div class="col-50-per">
-                                <span>Accepted</span>
-                                <h6 class="form-heading">8277582434</h6>
-                            </div>
-                            <div class="col-50-per">
-                                <span>Accepted</span>
-                                <h6 class="form-heading">44</h6>
-                            </div>
-                            <div class="col-50-per">
-                                <span>Rejected</span>
-                                <h6 class="form-heading">44</h6>
+                        </div>
+                        <div class="h-line">|</div>
+                        <div class="d-flex h-feed-section">
+                            <h6>Feed State</h6>
+                            <div class="filter-common allnews">
+                                <input class="h-search" list="All_news" name="myBrowser" placeholder="All News" />
+                                <i class="fas fa-chevron-down"></i>
+                                <datalist id="All_news">
+                                    <option value="Chrome">
+                                    <option value="Firefox">
+                                    <option value="Internet Explorer">
+                                    <option value="Opera">
+                                    <option value="Safari">
+                                    <option value="Microsoft Edge">
+                                </datalist>
                             </div>
                         </div>
                     </div>
+                    <div class="right-filter">
+                        <div>
+                            <button type="button" class="btn"><i class="fas fa-sync"></i> Reset Filter</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="grap-section">
-
-                </div>
-                <div class="after-dashboard user-data-page">
-                    <div class="user-table">
-                        <div class="user-data border">
-                            <table class="h-table">
+                <div class="section-two">
+                    <div class="create-story-section-one section-one">
+                        <div class="">
+                            <h6 class="form-heading">Basic Details</h6>
+                        </div>
+                        <div class="basic-detials">
+                            <div class="stories-found">
+                                <div class="">
+                                    <span>User Id</span>
+                                    <h6 class="form-heading">21131</h6>
+                                </div>
+                                <div class="">
+                                    <span>Email</span>
+                                    <h6 class="form-heading">kumar.dtckm@gmail.com</h6>
+                                </div>
+                                <div class="">
+                                    <span>Total Stories</span>
+                                    <h6 class="form-heading">44</h6>
+                                </div>
+                                <div class="">
+                                    <span>Total Stories</span>
+                                    <h6 class="form-heading">44</h6>
+                                </div>
+                                <div class="">
+                                    <span>In-Progress</span>
+                                    <h6 class="form-heading">44</h6>
+                                </div>
+                                <div class="">
+                                    <span>User Id</span>
+                                    <h6 class="form-heading">K. Kumar</h6>
+                                </div>
+                                <div class="">
+                                    <span>Phone No</span>
+                                    <h6 class="form-heading">8277582434</h6>
+                                </div>
+                                <div class="">
+                                    <span>Accepted</span>
+                                    <h6 class="form-heading">8277582434</h6>
+                                </div>
+                                <div class="">
+                                    <span>Accepted</span>
+                                    <h6 class="form-heading">44</h6>
+                                </div>
+                                <div class="">
+                                    <span>Rejected</span>
+                                    <h6 class="form-heading">44</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grap-section">
+                        <div class="graph-row">
+                            <div class="graph-section-one">
+                                <div class="graph-top-section">
+                                    <div class="graph-top-header-left">
+                                        <h5 class="graph-top-header-h5">Stories Created</h5>
+                                    </div>
+                                    <div class="h-flex">
+                                        <div class="accent">
+                                            <span class="color-light bg-primary"></span>
+                                            <span class="accent-name">Accepted</span>
+                                        </div>
+                                        <div class="accent ml-2">
+                                            <span class="color-light bg-dodger-blue"></span>
+                                            <span class="accent-name">Accepted</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph-bottom-section">
+                                    Graph section
+                                </div>
+                            </div>
+                            <div class="graph-section-one graph-section-two">
+                                <div class="graph-top-section">
+                                    <div class="graph-top-header-left">
+                                        <h5 class="graph-top-header-h5">Stories Created</h5>
+                                    </div>
+                                    <div class="h-flex">
+                                    </div>
+                                </div>
+                                <div class="graph-bottom-section">
+                                   <div class="row">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <div class="pull-left">
+                                            graph
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                                        <div class="pull-right">
+                                            <div class="accent">
+                                                <span class="color-light bg-primary"></span>
+                                                <span class="accent-name">Accepted</span>
+                                            </div>
+                                            <div class="accent">
+                                                <span class="color-light bg-dodger-blue"></span>
+                                                <span class="accent-name">Accepted</span>
+                                            </div>
+                                            <div class="accent">
+                                                <span class="color-light bg-dodger-blue-two"></span>
+                                                <span class="accent-name">Accepted</span>
+                                            </div>
+                                            <div class="accent">
+                                                <span class="color-light bg-dark-primary"></span>
+                                                <span class="accent-name">Accepted</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="graph-section-three">
+                                <div class="graph-section-one mb-2">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-xs-6">
+                                            <div class="pull-left">
+                                                <div class="">
+                                                    <h5 class="graph-top-header-h5">Stories Created</h5>
+                                                </div>
+                                                <div class="graph-three">
+                                                    <h3 class="graph-h3 text-blue">1245</h3>
+                                                    <span class="graph-span">Stories</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-xs-6">
+                                            <div class="pull-right">
+                                                Graph
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph-section-one">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-xs-6">
+                                            <div class="pull-left">
+                                                <div class="">
+                                                    <h5 class="graph-top-header-h5">Stories Created</h5>
+                                                </div>
+                                                <div class="graph-three">
+                                                    <h3 class="graph-h3 text-dar-primary">1245</h3>
+                                                    <span class="graph-span">Stories</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-xs-6">
+                                            <div class="pull-right">
+                                                Graph
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topic-status table-2">
+                        <div class="h-table">
+                            <table class="bordered">
                                 <thead>
                                     <tr>
                                         <th><input type="checkbox" id="user-heading"> <label for="user-heading"> User ID</label></th>
@@ -321,7 +455,8 @@
                                         <td>2021-09-30 20:32</td>
                                         <td>/hemant	</td>
                                         <td>Lorem</td>
-                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                        <td>On Duty</td>
+                                        <td><i class="fas fa-ellipsis-v table-icon"></i></td>
                                     </tr>
                                     <tr>
                                         <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
@@ -334,49 +469,8 @@
                                         <td>2021-09-30 20:32</td>
                                         <td>/hemant	</td>
                                         <td>Lorem</td>
-                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
-                                        <td>
-                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
-                                            <span class="user-email">meenareportermm@gmail.com</span>
-                                        </td>
-                                        <td>9994473695</td>
-                                        <td>MM-VELLORE</td>
-                                        <td>2021-09-30 20:32</td>
-                                        <td>/hemant	</td>
-                                        <td>Lorem</td>
-                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
-                                        <td>
-                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
-                                            <span class="user-email">meenareportermm@gmail.com</span>
-                                        </td>
-                                        <td>9994473695</td>
-                                        <td>MM-VELLORE</td>
-                                        <td>2021-09-30 20:32</td>
-                                        <td>/hemant	</td>
-                                        <td>Lorem</td>
-                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
-                                        <td>
-                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
-                                            <span class="user-email">meenareportermm@gmail.com</span>
-                                        </td>
-                                        <td>9994473695</td>
-                                        <td>MM-VELLORE</td>
-                                        <td>2021-09-30 20:32</td>
-                                        <td>/hemant	</td>
-                                        <td>Lorem</td>
-                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                        <td>On Duty</td>
+                                        <td><i class="fas fa-ellipsis-v table-icon"></i></td>
                                     </tr>
                                     <tr>
                                         <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
@@ -389,7 +483,8 @@
                                         <td>2021-09-30 20:32</td>
                                         <td>/hemant	</td>
                                         <td>Lorem</td>
-                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                        <td>On Duty</td>
+                                        <td><i class="fas fa-ellipsis-v table-icon"></i></td>
                                     </tr>
                                     <tr>
                                         <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
@@ -402,20 +497,8 @@
                                         <td>2021-09-30 20:32</td>
                                         <td>/hemant	</td>
                                         <td>Lorem</td>
-                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
-                                        <td>
-                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
-                                            <span class="user-email">meenareportermm@gmail.com </span> 
-                                        </td>
-                                        <td>9994473695</td>
-                                        <td>MM-VELLORE</td>
-                                        <td>2021-09-30 20:32</td>
-                                        <td>/hemant	</td>
-                                        <td>Lorem</td>
-                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                        <td>On Duty</td>
+                                        <td><i class="fas fa-ellipsis-v table-icon"></i></td>
                                     </tr>
                                     <tr>
                                         <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
@@ -428,7 +511,22 @@
                                         <td>2021-09-30 20:32</td>
                                         <td>/hemant	</td>
                                         <td>Lorem</td>
-                                        <td>On Duty <i class="fas fa-ellipsis-v table-icon"></i></td>
+                                        <td>On Duty</td>
+                                        <td><i class="fas fa-ellipsis-v table-icon"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td for="user-2"><input type="checkbox" id="user-1" name="" value=""> <label for="user-1"> 26161</label></td>
+                                        <td>
+                                            <h6 class="user-name">Meenatchi Sundareshwari</h6>
+                                            <span class="user-email">meenareportermm@gmail.com</span>
+                                        </td>
+                                        <td>9994473695</td>
+                                        <td>MM-VELLORE</td>
+                                        <td>2021-09-30 20:32</td>
+                                        <td>/hemant	</td>
+                                        <td>Lorem</td>
+                                        <td>On Duty</td>
+                                        <td><i class="fas fa-ellipsis-v table-icon"></i></td>
                                     </tr>
     
                                 </tbody>

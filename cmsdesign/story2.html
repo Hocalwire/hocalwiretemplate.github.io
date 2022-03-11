@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/boostrap-light.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
     <!-- sidebar start -->
     <div class="sidebar">
@@ -180,7 +182,7 @@
     </div>
     <!-- sidebar end -->
     <!-- main content start -->
-    <section class="home-section integration-page detail-wrapper">
+    <section class="home-section storytwo-wrapper">
         <div class="main-content">
             <div class="d-flex flex-wrap top-header">
                 <div class="top-header-left">
@@ -222,141 +224,182 @@
             <div class="header">
                 <div class="d-flex align-baseline reporter-header-first">
                     <div class="dashboard-section">
-                        <h4 class="Header-name">Details</h4>
+                        <h4 class="Header-name">Partner Configurations</h4>
                         <p class="header-content">All the latest updates an stats can be monitored here!</p>
                     </div>
-                    <div>
-                        <button type="button" class="btn btn-white border"><i class="far fa-edit"></i> Edit News</button>
-                    </div>
                 </div>
             </div>
-            <div class="after-dashboard h-integration">
-                <div class="newsdetail-section-one">
-                    <div class="n-section-one">
-                        <h6 class="form-heading">News Details</h6>
-                    </div>
-                    <div class="n-section-two">
-                        <h6 class="newsdetail-title text-muted">Title</h6>
-                        <h4 class="newsdetail-paragraph">Plea Before Kerala High Court Questions Constitutionality Of Section 2 Of Kerala Apartment Ownership Act</h4>
-                    </div>
-                    <div class="row">
-                        <div class="col-50-per">
-                            <h6 class="newsdetail-title text-muted">News Time</h6>
-                            <h4 class="newsdetail-paragraph">Oct 7, 2021  12:32 PM</h4>
-                        </div>
-                        <div class="col-50-per">
-                            <h6 class="newsdetail-title text-muted">News Time</h6>
-                            <h4 class="newsdetail-paragraph">Oct 7, 2021  12:32 PM</h4>
-                        </div>
-                        <div class="col-50-per">
-                            <h6 class="newsdetail-title text-muted">News Time</h6>
-                            <h4 class="newsdetail-paragraph text-blue">Oct 7, 2021  12:32 PM</h4>
-                        </div>
-                        <div class="col-50-per">
-                            <h6 class="newsdetail-title text-muted">News Time</h6>
-                            <h4 class="newsdetail-paragraph text-blue">Oct 7, 2021  12:32 PM</h4>
+            <div class="after-dashboard">
+                <div class="filter-section">
+                    <div class="d-flex flex-start left-filter">
+                        <h6 class="">7 Stories Found</h6>
+                        <div class="clear-filters">
+                            <span>Clear Filters</span>
+                            <i class="fas fa-times"></i>
                         </div>
                     </div>
-                </div>
-                <div class="newsdetail-section-one">
-                    <div class="n-section-one">
-                        <h6 class="form-heading">News Details</h6>
-                    </div>
-                    <div class="n-section-two">
-                        <div class="">
-                            <h6 class="newsdetail-title text-muted">Title</h6>
+                    <div class="d-flex right-filter">
+                        <div class="filter-common">
+                            <i class="fas fa-search"></i>
+                            <input class="h-search" type="text" placeholder="Search" >
                         </div>
-                        <div class="news-detail-tags">
-                            <h6>Kerala High Court</h6>
-                            <h6>Kent Constructions</h6>
-                            <h6>Kerala Apartment Ownership Act</h6>
-                            <h6>Apartment Owners</h6>
+                        <div class="filter-common allnews mr-lg-0 mr-sm-2">
+                            <i class="fas fa-sort-amount-down-alt"></i>
+                            <input class="h-search" list="All_news" name="myBrowser" placeholder="All News" />
+                            <i class="fas fa-chevron-down"></i>
+                            <datalist id="All_news">
+                                <option value="Chrome">
+                                <option value="Firefox">
+                                <option value="Internet Explorer">
+                                <option value="Opera">
+                                <option value="Safari">
+                                <option value="Microsoft Edge">
+                            </datalist>
                         </div>
-                    </div>
-                    <div class="n-section-two">
-                        <div>
-                            <h6 class="newsdetail-title text-muted">Keywords</h6>
+                        <div class="h-line">|</div>
+                        <div class="h-time mr-sm-2">
+                            <div class="time-div left-time">
+                                <span class="time-title ml-0">From</span>
+                                <div class="from-time">
+                                    <i class="fas fa-sort-amount-down-alt"></i>
+                                    <input class="h-search" placeholder="2021-09-08">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="time-div right-time">
+                                <span class="time-title"> To </span>
+                                <div class="from-time">
+                                    <i class="fas fa-sort-amount-down-alt"></i>
+                                    <input class="h-search" placeholder="2021-09-08">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="news-detail-tags">
-                            <h6>Kerala High Court</h6>
-                            <h6>Kent Constructions</h6>
-                            <h6>Kerala Apartment Ownership Act</h6>
-                            <h6>Apartment Owners</h6>
-                        </div>
-                    </div>
-                    <div class="n-section-two">
-                        <div>
-                            <h6 class="newsdetail-title text-muted">News URL</h6>
-                        </div>
-                        <div class="news-detail-tags">
-                            <h6>/news-updates/kerala-high-court-plea-questions-constitutionally-of-section-2-kerala-apartment-ownership-act-183301</h6>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div>
-                            <h6 class="newsdetail-title text-muted">Image</h6>
-                        </div>
-                        <div class="news-detail-tags">
-                            <img src="assets/images/articleimage.jpeg" alt="images">
+                        <div class="h-line">|</div>
+                        <div class="h-grid">
+                            <div class="border-all">
+                                <i class="fas fa-border-all"></i>
+                            </div>
+                            <div class="border-all list-ul">
+                                <i class="fas fa-list-ul"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="newsdetail-section-one">
-                    <div class="n-section-one">
-                        <h6 class="form-heading">SEO Title / Description</h6>
-                    </div>
-                    <div class="n-section-two">
-                        <div>
-                            <h6 class="newsdetail-title text-muted">SEO Title</h6>
-                            <h4 class="newsdetail-paragraph">Plea Before Kerala High Court Questions Constitutionality Of Section 2 Of Kerala Apartment Ownership Act</h4>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div>
-                            <h6 class="newsdetail-title text-muted">SEO Description</h6>
-                            <h4 class="newsdetail-paragraph">Oct 7, 2021  12:32 PM</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="newsdetail-section-one">
-                    <div class="n-section-one">
-                        <h6 class="form-heading">Detailed Story</h6>
-                    </div>
-                    <div class="n-section-two">
-                        <div>
-                            <h6 class="newsdetail-title text-muted">SEO Title</h6>
-                            <h4 class="newsdetail-paragraph">Plea Before Kerala High Court Questions Constitutionality Of Section 2 Of Kerala Apartment Ownership Act</h4>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div>
-                            <h6 class="newsdetail-title text-muted">SEO Description</h6>
-                            <h4 class="newsdetail-paragraph f-400">plea has boon tied botare the Kerala High Court chalknging tha corettutional valdty of Secton 2 ot the Kara a Apartment Owner:h p Act, 1563
-                                Justico Devan Born posad on 11th stpbar Th pettien; under the Kent Mahal Complex and Kent Oskilk.two mutt-storeund.armer: busines in tha Stato Sactica 2 reojres al oarers to duh The plea assails the consinutions ity of the pros on contained in Section 2 20 far as & stipulates the meistence of doclaration and doods at the apsrtment to ba filed by all apartment owner: The case of the pettoners is that the sole owner of sheir apartments is the 4th respond ent herein and that the sparmerts were thereatter transferrod to incividual apstmant oTXX5 As per Sostion 2, the sole owner should have tied the dacisration to make the Act appicable to the property. Howavor, since the statute was not operations at that point in time, the sad declaration was not dona Addinator@sayssineytabiesomekothpAet.spelicabiatothe prepartyinordirtoosin.exclus/vo@anershp.over theirlind-sous.apartments On the cond/sign for making the Act appliceba for enoying ind nos so0 the ment on of she statute. Adung on Lace they have segened thatit envisages insing so anurtmant turnable and transfershlo.property o the oar whie Sect on 2 rostnats and not una re Labo in walation of fur Mamantal Righte ratinod in Artials 21 and 300A of she Constitution • may hire so coling thetr Case Titie: Kant Mahal Welfare Assocation & Ary. State of Kersa & Om</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="news-detail-table-one">
-                <div class="topic-status newsdetail-table">
+                <div class="topic-status table-6">
                     <div class="h-table">
                         <table class="bordered">
                             <thead>
-                                <tr>
-                                    <th>User ID</th>
-                                    <th>Name</th>
+                                <tr align="left">
+                                    <th>Story ID</th>
+                                    <th>Heading</th>
                                     <th>Date Created</th>
                                     <th>Created By</th>
                                     <th>Reviewer</th>
+                                    <th colspan="2">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>26161</td>
-                                    <td>Plea Before Kerala High Court Questions Constitutionality Of Section 2 Of Kerala Apartment Ownership Act</td>
-                                    <td>Oct 7, 2021, 09:01 AM</td>
-                                    <td>Harish M Varghhese</td>
-                                    <td>Rashid M A</td>
+                                    <td class="text-blue">26161</td>
+                                    <td>
+                                        <div class="table-card">
+                                            <div class="table-card-top">
+                                                <img class="table-card-img" src="assets/images/avatar.jpeg" alt="images"/>
+                                            </div>
+                                            <div class="table-card-content">
+                                                <span class="table-card-description">ICMR should take actions against private labs, says Delhi High Court</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Sep 7, 2021 6:46 PM	</td>
+                                    <td>Nida Fatima</td>
+                                    <td>Madhusree Goswami</td>
+                                    <td class="text-blue">Submitted</td>
+                                    <td><i class="fas fa-ellipsis-v"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">26161</td>
+                                    <td>
+                                        <h6 class="table-card-h6">India's struggle to meet rooftop solar targets</h6>
+                                    </td>
+                                    <td>Sep 7, 2021 6:46 PM	</td>
+                                    <td>Nida Fatima</td>
+                                    <td>Madhusree Goswami</td>
+                                    <td class="text-blue">Submitted</td>
+                                    <td><i class="fas fa-ellipsis-v"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">26161</td>
+                                    <td>
+                                        <div class="table-card">
+                                            <div class="table-card-top">
+                                                <img class="table-card-img" src="assets/images/avatar.jpeg" alt="images"/>
+                                            </div>
+                                            <div class="table-card-content">
+                                                <span class="table-card-description">5 year old Eliana flags off first ever Imphal-Shillong flight</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Sep 7, 2021 6:46 PM	</td>
+                                    <td>Nida Fatima</td>
+                                    <td>Madhusree Goswami</td>
+                                    <td class="text-orange">In Review</td>
+                                    <td><i class="fas fa-ellipsis-v"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">26161</td>
+                                    <td>
+                                        <div class="table-card">
+                                            <div class="table-card-top">
+                                                <img class="table-card-img" src="assets/images/avatar.jpeg" alt="images"/>
+                                            </div>
+                                            <div class="table-card-content">
+                                                <span class="table-card-description">Gulf Sky: Ghost Ship of Iran</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Sep 7, 2021 6:46 PM	</td>
+                                    <td>Nida Fatima</td>
+                                    <td>Madhusree Goswami</td>
+                                    <td class="text-blue">Submitted</td>
+                                    <td><i class="fas fa-ellipsis-v"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">26161</td>
+                                    <td>
+                                        <div class="table-card">
+                                            <div class="table-card-content">
+                                                <span class="table-card-description">Gujarat HC</span>
+                                                <h6><svg height="10" width="10">
+                                                    <circle cx="5" cy="5" r="5" fill="#FFC547" />
+                                                  </svg> 
+                                                  <span class="text-muted">Madhusree Goswami is working on this story</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Sep 7, 2021 6:46 PM	</td>
+                                    <td>Nida Fatima</td>
+                                    <td>Madhusree Goswami</td>
+                                    <td class="text-blue">Submitted</td>
+                                    <td><i class="fas fa-ellipsis-v"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">26161</td>
+                                    <td>
+                                        <div class="table-card">
+                                            
+                                            <div class="table-card-content">
+                                                <span class="table-card-description">ICMR should take actions against private labs, says Delhi High Court</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Sep 7, 2021 6:46 PM	</td>
+                                    <td>Nida Fatima</td>
+                                    <td>Madhusree Goswami</td>
+                                    <td class="text-lima">Submitted</td>
+                                    <td><i class="fas fa-ellipsis-v"></i></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -372,4 +415,5 @@
     <script src="file/js/lightslider.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

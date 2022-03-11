@@ -16,12 +16,9 @@ $(document).ready(function(){
   $(window).resize(function(){
       alterClass();
   });
-  //Fire it when the page first loads:
   alterClass();
 
-  $('.sidebar-menu ul li').on("click",function(){
-    $('.h-down-arrow').css('transform','rotate(90deg)');
-  });
+  
 
   // Tabs start
   $(function(){
@@ -32,6 +29,7 @@ $(document).ready(function(){
     $(this).addClass("tab-active");
     });
   });
+
   // tooltip start
   tippy('[data-tippy-content]',{
     animation: 'fade',
@@ -51,34 +49,64 @@ $(document).ready(function(){
     slideMargin: 15,
     pause: 5000,
     responsive: [{
-            breakpoint: 992,
-            settings: {
-                item: 3
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                item: 1
-            }
+      breakpoint: 992,
+          settings: {
+              item: 3
+          }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+            item: 2,
+            slideMargin: 10,
         }
+      }
     ]
   });
+  // accordion start
+  $('.acc__title').click(function(j) {
+            
+    var dropDown = $(this).closest('.acc__card').find('.acc__panel');
+    $(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();
+    
+    if ($(this).hasClass('active')) {
+    $(this).removeClass('active');
+    } else {
+    $(this).closest('.acc').find('.acc__title.active').removeClass('active');
+    $(this).addClass('active');
+    }
+    
+    dropDown.stop(false, true).slideToggle();
+    j.preventDefault();
+  });
+
+
 });
+
+// dropdown Menu start
+var acc = document.getElementsByClassName("sidebar_accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sidebar_dropdown = this.nextElementSibling;
+    if (sidebar_dropdown.style.display === "block") {
+      sidebar_dropdown.style.display = "none";
+    } else {
+      sidebar_dropdown.style.display = "block";
+    }
+  });
+}
 
 // sidebar start
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
-let searchBtn = document.querySelector(".bx-search");
 
-closeBtn.addEventListener("click", ()=>{
+closeBtn.addEventListener("click", () => {
   sidebar.classList.toggle("open");
-  menuBtnChange();
 });
-
 searchBtn.addEventListener("click", ()=>{
   sidebar.classList.toggle("open");
-  menuBtnChange(); 
 });
-
 // sidebar end
