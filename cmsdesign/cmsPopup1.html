@@ -55,6 +55,14 @@
             </div>
             <div class="modal-body">
                 <div class="select-gallery-desc">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="pull-right">
+                                <span class="btn model-filters model-add-btn">Add</span>
+                                <span class="btn model-filters model-filter-btn">Filter</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="tab-inner">
                         <div class="tab-heading">
                             <div class="tabsingle br_left tab-active" target="7"> All images </div>
@@ -62,6 +70,69 @@
                             <div class="tabsingle br_left" target="9"> Videos </div>
                             <div class="tabsingle br_left" target="10"> Overlay </div>
                             <div class="tabsingle br_left" target="11"> Icons </div>
+                        </div>
+                        
+                    </div>
+                    <div class="h-model-time-section">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="h-modal-time-container">
+                                        <div class="heading">From Date:</div>
+                                            <div>
+                                                <div class="input-group select_date_story_from">
+                                                    <input id="input_story_from" name="input_story_from" type="text" class="form-control" value="" style="border: 1px solid #CCC;height: 38px;">
+                                                    <span class="input-group-addon">
+                                                        <span class="fas fa-date"><img src="assets/images/datetime.png"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="h-modal-time-container">
+                                        <div class="heading">To Date:</div>
+                                        <div>
+                                            <div class="input-group select_date_story_to">
+                                                <input id="input_story_to" name="input_story_to" type="text" class="form-control" value="" style="border: 1px solid #CCC;height: 38px;">
+                                                <span class="input-group-addon">
+                                                    <span class="fas fa-date"><img src="assets/images/datetime.png"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12" style="margin-top:10px;">
+                                    <div class="col-sm-6">
+                                        <input class="form-control model-filter-form" type="text" id="searchString" name="searchString" value="" placeholder="Enter Search String">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a class="btn model-search-btn" style="float:left;">Search</a>
+                                        
+                                            <a class="btn btn-secondary" style="float:left;">Clear Filter</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-add-container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="text-center">
+                                    <div class="panel-heading">Upload Images in Gallery</div>
+                                    <div class="model-form-group">
+                                        <div class="file-input">
+                                            <input type="file" name="file-input" id="file-input" class="file-input__input" />
+                                            <label class="file-input__label" for="file-input">
+                                                <i class="fas fa-upload"></i>
+                                                <span>Upload Images or Video</span>
+                                            </label>
+                                            </div>
+                                    </div>
+                                    <a class="btn btn-upload" style="float:left;">Update</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="bg-white tab-content-section">
@@ -403,6 +474,7 @@
                             <div class="tabsingle br_left" target="22"> <i class="fas fa-border-all"></i> </div>
                             <div class="tabsingle br_left" target="23"> <i class="fas fa-ellipsis-h"></i> </div>
                         </div>
+                        
                     <button class="icon modal-close">&times;</button>
                     </div>
                 </div>
@@ -712,6 +784,14 @@
                 e.target.style.display = 'none';
             }
         }
+
+
+            $(".model-add-btn").click(function(){
+                $(".h-model-time-section").slideToggle();
+            });
+            $(".model-filter-btn").click(function(){
+                $(".model-add-container").slideToggle();
+            });
     </script>
 </body>
 </html>
